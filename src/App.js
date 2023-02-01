@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(true);
 
   const controlNavBar = () => {
-    if (window.scrollY > 150) {
+    if (window.scrollY > 180) {
       setShowNav(true);
     } else {
       setShowNav(false);
@@ -22,8 +23,18 @@ function App() {
 
   return (
     <div>
-      {showNav && <TopBar color="bg-black fixed " />}
-      <TopBar color="bg-transparent absolute " />
+      {showNav && (
+        <TopBar
+          classes="bg-black fixed z-10"
+          showDropdown={showDropdown}
+          setShowDropdown={setShowDropdown}
+        />
+      )}
+      <TopBar
+        classes="bg-transparent absolute  "
+        showDropdown={showDropdown}
+        setShowDropdown={setShowDropdown}
+      />
       <div className=" h-screen w-screen bg-slate-600 text-blue-800 ">
         AALOO
       </div>
