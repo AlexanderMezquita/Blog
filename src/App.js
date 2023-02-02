@@ -1,10 +1,11 @@
 import TopBar from "./Components/TopBar/TopBar";
 import "./App.css";
 import { useEffect, useState } from "react";
+import Welcome from "./Components/index/Welcome";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(true);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   const controlNavBar = () => {
     if (window.scrollY > 180) {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div>
+      {/* Top Bar shown when screen size is sm */}
       {showNav && (
         <TopBar
           classes="bg-black fixed z-10"
@@ -35,9 +37,7 @@ function App() {
         showDropdown={showDropdown}
         setShowDropdown={setShowDropdown}
       />
-      <div className=" h-screen w-screen bg-slate-600 text-blue-800 ">
-        AALOO
-      </div>
+      <Welcome />
       <div className="h-screen w-screen bg-slate-500 text-blue-800">AALOO</div>
     </div>
   );
