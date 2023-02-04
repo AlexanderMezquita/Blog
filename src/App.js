@@ -27,7 +27,7 @@ function App() {
       {/* Top Bar shown when screen size is sm */}
       {showNav && (
         <TopBar
-          classes="bg-black fixed z-10"
+          classes="bg-black fixed z-10 "
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />
