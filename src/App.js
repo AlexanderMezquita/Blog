@@ -2,6 +2,7 @@ import TopBar from "./Components/TopBar/TopBar";
 import "./App.css";
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
+import ContactMe from "./Components/index/ContactMe";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -37,8 +38,12 @@ function App() {
         showDropdown={showDropdown}
         setShowDropdown={setShowDropdown}
       />
-      <Welcome />
-      <div className="h-screen w-screen bg-slate-500 text-blue-800">AALOO</div>
+      <section id="home">
+        <Welcome />
+      </section>
+      <section id="contact">
+        <ContactMe />
+      </section>
     </div>
   );
 }
