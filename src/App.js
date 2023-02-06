@@ -3,6 +3,8 @@ import "./App.css";
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
 import ContactMe from "./Components/index/ContactMe";
+import Footer from "./Components/index/Footer";
+import Project from "./Components/index/Project";
 
 function App() {
   const [showNav, setShowNav] = useState(false);
@@ -41,9 +43,13 @@ function App() {
       <section id="home">
         <Welcome />
       </section>
+      <section id="portfolio">
+        <Project />
+      </section>
       <section id="contact">
         <ContactMe />
       </section>
+      <Footer />
     </div>
   );
 }

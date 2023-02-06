@@ -9,17 +9,18 @@ import {
 export default function TopBar(props) {
   const DropDown = () => {
     return (
-      <div className=" h-64 bg-black text-white  flex-col justify-between p-3 border-spacing-3 w-screen  flex sm:hidden">
+      <div className=" z-10 h-64 bg-black text-white  flex-col justify-between p-3 border-spacing-3 w-screen  flex sm:hidden">
         <Link title="Home" classes=" border-neutral-800 border-b-2 p-1" />
-        <Link
+        {/* <Link
           title="About"
           href="#about"
           classes="border-neutral-800 border-b-2 p-1"
-        />
-        <Link title="What I do" classes="border-neutral-800 border-b-2 p-1" />
-        <Link title="Resume" classes="border-neutral-800 border-b-2 p-1" />
+        /> */}
+        {/* <Link title="What I do" classes="border-neutral-800 border-b-2 p-1" />
+        <Link title="Resume" classes="border-neutral-800 border-b-2 p-1" /> */}
         <Link
           title="Portfolio"
+          href="#portfolio"
           classes="  border-neutral-800  border-b-2 p-1"
         />
         <Link title="Contact " href="#contact" classes="p-1" />
@@ -53,10 +54,10 @@ export default function TopBar(props) {
         <span className="p-4 text-lg ">Alexander</span>
         <nav className=" space-x-20 hidden lg:flex ">
           <Link title="Home" href="#home" />
-          <Link title="About" />
+          {/* <Link title="About" />
           <Link title="What I do" />
-          <Link title="Resume" />
-          <Link title="Portfolio" />
+          <Link title="Resume" /> */}
+          <Link title="Portfolio" href="#portfolio" />
           <Link title="Contact" href="#contact" />
         </nav>
         <div>
