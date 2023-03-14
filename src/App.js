@@ -1,5 +1,4 @@
 import TopBar from "./Components/TopBar/TopBar";
-import "./App.css";
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
 import ContactMe from "./Components/index/ContactMe";
@@ -26,31 +25,29 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <>
       {/* Top Bar shown when screen size is sm */}
+
       {showNav && (
         <TopBar
-          classes="bg-black fixed z-10 "
+          bgcolor="bg-[#080808]"
+          position=" fixed z-20 "
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />
       )}
       <TopBar
-        classes="bg-transparent absolute  "
+        position="bg-transparent absolute"
         showDropdown={showDropdown}
         setShowDropdown={setShowDropdown}
       />
-      <section id="home">
+      <main>
         <Welcome />
-      </section>
-      <section id="portfolio">
         <Project />
-      </section>
-      <section id="contact">
         <ContactMe />
-      </section>
+      </main>
       <Footer />
-    </div>
+    </>
   );
 }
 

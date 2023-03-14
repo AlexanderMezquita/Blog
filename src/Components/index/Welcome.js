@@ -4,7 +4,10 @@ import { KeyboardArrowDown } from "@mui/icons-material";
 
 export default function Welcome() {
   return (
-    <div className=" w-screen h-screen bg-slate-600 text-white grid  ">
+    <section
+      className=" w-screen h-screen bg-[#283747] text-white grid "
+      id="home"
+    >
       <div className=" text-center flex flex-col items-center mt-auto mb-auto">
         <Avatar
           alt="Alex"
@@ -12,7 +15,7 @@ export default function Welcome() {
           src="https://www.clipartmax.com/png/middle/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png"
         />
         <div className=" text-3xl">Welcome</div>
-        <div className=" text-3xl lg:text-7xl">I am a web developer</div>
+        <div className=" text-3xl lg:text-7xl">I'm Alex</div>
         <div className=" text-4xl">based on Dominican Republic</div>
 
         <div className="flex items-center justify-center mt-6">
@@ -24,6 +27,6 @@ export default function Welcome() {
           <KeyboardArrowDown fontSize="large" />
         </div>
       </div>
-    </div>
+    </section>
   );
 }

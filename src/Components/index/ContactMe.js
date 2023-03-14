@@ -13,7 +13,7 @@ export default function ContactMe() {
   };
 
   return (
-    <div className="w-screen bg-slate-300">
+    <section className="w-screen bg-slate-300" id="contact">
       <div className=" h-64 relative ">
         <div className=" absolute top-32 flex justify-center items-center w-screen ">
           <span className=" tracking-wider text-8xl md:block hidden uppercase opacity-5">
@@ -95,6 +95,6 @@ export default function ContactMe() {
           </Button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

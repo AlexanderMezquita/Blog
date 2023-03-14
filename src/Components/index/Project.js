@@ -23,11 +23,14 @@ export default function Project() {
     );
   };
   return (
-    <div className="w-screen bg-neutral-800 p-10 grid grid-cols-12 gap-5 row-auto ">
+    <section
+      className="w-screen bg-neutral-800 p-10 grid grid-cols-12 gap-5 row-auto "
+      id="portfolio"
+    >
       <Card />
       <Card />
       <Card />
       <Card />
-    </div>
+    </section>
   );
 }
