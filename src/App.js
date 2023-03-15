@@ -1,4 +1,4 @@
-import TopBar from "./Components/TopBar/TopBar";
+import TopBar from "./Components/topBar/TopBar";
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
 import ContactMe from "./Components/index/ContactMe";

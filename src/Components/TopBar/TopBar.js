@@ -9,7 +9,7 @@ import {
 export default function TopBar(props) {
   const DropDown = () => {
     return (
-      <div className=" z-10 bg-black bg-opacity-95 text-white  flex-col justify-between p-3 border-spacing-3 w-screen  flex sm:hidden">
+      <ul className=" z-50 bg-black bg-opacity-95 text-white  flex-col justify-between p-3 border-spacing-3 w-screen  flex sm:hidden">
         <Link
           title="Home"
           href="#home"
@@ -21,17 +21,17 @@ export default function TopBar(props) {
           classes="border-neutral-800  border-b-2 p-4"
         />
         <Link title="Contact " href="#contact" classes="p-4" />
-      </div>
+      </ul>
     );
   };
 
   const Link = (props) => {
     return (
-      <span
+      <li
         className={`${props.classes} hover:text-green-300 hover:cursor-pointer`}
       >
         <a href={`${props.href}`}>{props.title}</a>
-      </span>
+      </li>
     );
   };
 
@@ -45,19 +45,21 @@ export default function TopBar(props) {
 
   return (
     <>
-      <nav className={`flex flex-col fixed top-0 w-screen ${props.position}`}>
+      <nav
+        className={` fixed top-0 min-w-full  ${props.bgcolor} ${props.position} h-16 `}
+      >
         <div
-          className={` h-16 text-white  flex items-center justify-between p-2 ${props.bgcolor}  `}
+          className={`  text-white flex  items-center justify-between p-2 max-w-screen-2xl m-auto   `}
         >
           <h2 className="p-4 ">Alexander</h2>
-          <div className=" space-x-20 hidden lg:flex ">
+          <ul className=" space-x-20 hidden lg:flex ">
             <Link title="Home" href="#home" />
             {/* <Link title="About" />
           <Link title="What I do" />
           <Link title="Resume" /> */}
             <Link title="Portfolio" href="#portfolio" />
             <Link title="Contact" href="#contact" />
-          </div>
+          </ul>
           <div>
             <div className=" space-x-4 p-4 flex  ">
               <div
