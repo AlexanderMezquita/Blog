@@ -1,9 +1,9 @@
-import TopBar from "./Components/topBar/TopBar";
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
 import ContactMe from "./Components/index/ContactMe";
 import Footer from "./Components/index/Footer";
 import Project from "./Components/index/Project";
+import TopBar from "./Components/TopBar/TopBar";
 
 function App() {
   const [showNav, setShowNav] = useState(false);

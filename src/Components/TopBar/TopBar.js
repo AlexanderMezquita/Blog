@@ -67,7 +67,7 @@ export default function TopBar(props) {
                 props.setShowDropdown(!props.showDropdown);
               }}
             >
-              <Icons icon={<MenuRounded />} />
+              <Icons icon={<MenuRounded />} link={"javascript:;"} />
             </div>
             <Icons
               icon={<Twitter />}
