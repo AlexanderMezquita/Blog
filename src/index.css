@@ -18,8 +18,26 @@
 }
 
 html {
-  scroll-behavior: smooth,
+  scroll-behavior: smooth !important;
  
+}
+
+h1{
+  @apply text-3xl
+}
+
+h2 {
+  @apply text-2xl font-bold
+} 
+h3 {
+  @apply text-xl font-bold
+}
+h4 {
+  @apply text-lg font-bold
+}
+
+svg {
+  fill: white;
 }
 
 body {

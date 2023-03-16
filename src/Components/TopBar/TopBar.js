@@ -44,52 +44,50 @@ export default function TopBar(props) {
   };
 
   return (
-    <>
-      <nav
-        className={` fixed top-0 min-w-full  ${props.bgcolor} ${props.position} h-16 `}
+    <nav
+      className={` fixed top-0 min-w-full  ${props.bgcolor} ${props.position} h-16 `}
+    >
+      <div
+        className={`  text-white flex  items-center justify-between p-2 max-w-screen-2xl m-auto   `}
       >
-        <div
-          className={`  text-white flex  items-center justify-between p-2 max-w-screen-2xl m-auto   `}
-        >
-          <h2 className="p-4 ">Alexander</h2>
-          <ul className=" space-x-20 hidden lg:flex ">
-            <Link title="Home" href="#home" />
-            {/* <Link title="About" />
+        <h3 className="p-4 ">Alexander</h3>
+        <ul className=" space-x-20 hidden lg:flex ">
+          <Link title="Home" href="#home" />
+          {/* <Link title="About" />
           <Link title="What I do" />
           <Link title="Resume" /> */}
-            <Link title="Portfolio" href="#portfolio" />
-            <Link title="Contact" href="#contact" />
-          </ul>
-          <div>
-            <div className=" space-x-4 p-4 flex  ">
-              <div
-                className="flex sm:hidden"
-                onClick={() => {
-                  props.setShowDropdown(!props.showDropdown);
-                }}
-              >
-                <Icons icon={<MenuRounded />} link={"javascript:;"} />
-              </div>
-              <Icons
-                icon={<Twitter />}
-                color="hover:text-blue-500 md:flex hidden"
-                link="https://twitter.com/?lang=en"
-              />
-              <Icons
-                icon={<FacebookRounded />}
-                color="hover:text-blue-800 md:flex hidden"
-                link="https://www.facebook.com/"
-              />
-              <Icons
-                icon={<BlurCircular />}
-                color="hover:text-red-500 md:flex hidden"
-                link="https://github.com/"
-              />
+          <Link title="Portfolio" href="#portfolio" />
+          <Link title="Contact" href="#contact" />
+        </ul>
+        <div>
+          <div className=" space-x-4 p-4 flex  ">
+            <div
+              className="flex sm:hidden"
+              onClick={() => {
+                props.setShowDropdown(!props.showDropdown);
+              }}
+            >
+              <Icons icon={<MenuRounded />} />
             </div>
+            <Icons
+              icon={<Twitter />}
+              color="hover:text-blue-500 md:flex hidden"
+              link="https://twitter.com/?lang=en"
+            />
+            <Icons
+              icon={<FacebookRounded />}
+              color="hover:text-blue-800 md:flex hidden"
+              link="https://www.facebook.com/"
+            />
+            <Icons
+              icon={<BlurCircular />}
+              color="hover:text-red-500 md:flex hidden"
+              link="https://github.com/"
+            />
           </div>
         </div>
-        {props.showDropdown && <DropDown />}
-      </nav>
-    </>
+      </div>
+      {props.showDropdown && <DropDown />}
+    </nav>
   );
 }
