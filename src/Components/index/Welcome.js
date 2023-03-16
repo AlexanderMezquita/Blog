@@ -9,7 +9,8 @@ import html from "../assets/html5.svg";
 import css from "../assets/css.svg";
 import redux from "../assets/redux.svg";
 import git from "../assets/git.svg";
-import { GitHub, LinkedIn } from "@mui/icons-material";
+import me from "../assets/me.png";
+import { GitHub, LinkedIn, FileDownload } from "@mui/icons-material";
 
 export default function Welcome() {
   const skillsIcons = [
@@ -34,6 +35,12 @@ export default function Welcome() {
       icon: LinkedIn,
       // href: "https://github.com/AlexanderMezquita",
     },
+    {
+      name: "linkedin",
+      icon: FileDownload,
+      description: "Get my CV ",
+      // href: "https://github.com/AlexanderMezquita",
+    },
   ];
 
   const SkillsCloud = (props) => (
@@ -49,16 +56,9 @@ export default function Welcome() {
     >
       <div className="max-w-5xl ml-auto mr-auto relative">
         <div className="  flex flex-col items-center z-10 bg-[#0D1117]  p-10  rounded-xl  ">
-          <Avatar
-            alt="Alex"
-            sx={{
-              width: 100,
-              height: 100,
-              position: "absolute",
-              top: "-5rem",
-            }}
-            src="https://www.clipartmax.com/png/middle/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png"
-          />
+          <div className="absolute -top-20 h-28 w-28  border-4 border-black  bg-[#0D1117] flex justify-center items-center rounded-full">
+            <img alt="Alex" className=" h-28 w-28 " src={me} />
+          </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-2 md:col-span-1">
               <h2 className=" text-center lg:text-left">Hi, I'm Alex</h2>
@@ -71,19 +71,21 @@ export default function Welcome() {
               </p>
               <h3 className="mt-5 mb-2 text-center lg:text-left">Contact</h3>
               <a href="mailto:alexmezsan@gmail.com">
-                <p className="underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
+                <p className=" underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
                   alexmezsan@gmail.com
                 </p>
               </a>
-              {socialsIcons.map((item, index) => (
-                <a href={item.href}>
-                  <item.icon
-                    key={index}
-                    sx={{ width: "50px", height: "50px" }}
-                    className=" cursor-pointer border-2 p-2 mr-5 rounded-xl hover:bg-white hover:text-black  border-white text-white"
-                  />
-                </a>
-              ))}
+              <div className="flex flex-wrap justify-center md:justify-start w-full gap-5">
+                {socialsIcons.map((item, index) => (
+                  <a
+                    href={item.href}
+                    className=" cursor-pointer border-2 p-2  text-center  rounded-xl  hover:bg-white hover:text-black  border-white text-white"
+                  >
+                    {item.description}
+                    <item.icon key={index} />
+                  </a>
+                ))}
+              </div>
             </div>
             <div className="col-span-2 md:col-span-1">
               <h2 className="mb-5 text-center lg:text-left">My skills cloud</h2>
@@ -95,15 +97,6 @@ export default function Welcome() {
             </div>
           </div>
         </div>
-
-        {/* <div className="flex items-center justify-center mt-6">
-          <Button variant="outlined" size="large">
-            Hire Me!
-          </Button>
-        </div> */}
-        {/* <div className="absolute bottom-4 left-2/4 -ml-2  hover:cursor-pointer">
-          <KeyboardArrowDown fontSize="large" />
-        </div> */}
       </div>
     </section>
   );
