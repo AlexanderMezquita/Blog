@@ -67,7 +67,7 @@ export default function Welcome() {
   );
 
   return (
-    <section className=" w-screen   p-5 pt-44" id="home">
+    <section className=" w-screen   p-5 pt-44 " id="home">
       <div className="max-w-5xl ml-auto mr-auto relative">
         <div className="   flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl  ">
           <div className="absolute -top-20 h-28 w-28  border-4 border-black  secondary-bg-color flex justify-center items-center rounded-full">
