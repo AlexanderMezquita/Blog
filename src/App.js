@@ -31,14 +31,14 @@ function App() {
         <TopBar
           bgcolor="bg-[#080808] bg-opacity-50 backdrop-blur-sm "
           position={`${
-            showNav && " top-0  "
-          } z-20 fixed  -top-[50px]  transition-all duration-300`}
+            !showNav && "-top-[60px] "
+          } z-20 fixed  top-0 -top-0  transition-all duration-300`}
           // showDropdown={showDropdown}
           // setShowDropdown={setShowDropdown}
         />
 
         <TopBar
-          position="bg-transparent absolute"
+          position="bg-transparent absolute "
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />
