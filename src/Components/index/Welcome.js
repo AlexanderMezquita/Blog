@@ -10,6 +10,8 @@ import git from "../assets/icons/git.svg";
 import me from "../assets/icons/me.png";
 import jira from "../assets/icons/jira.svg";
 import materialui from "../assets/icons/materialui.svg";
+import npm from "../assets/icons/npm.svg";
+import firebase from "../assets/icons/firebase.svg";
 
 import { GitHub, LinkedIn, FileDownload } from "@mui/icons-material";
 
@@ -25,6 +27,8 @@ export default function Welcome() {
     { name: "git", src: git },
     { name: "jira", src: jira },
     { name: "materialui", src: materialui },
+    { name: "npm", src: npm },
+    { name: "firebase", src: firebase },
   ];
 
   const socialsIcons = [
@@ -63,10 +67,7 @@ export default function Welcome() {
   );
 
   return (
-    <section
-      className=" w-screen min-h-screen  text-white p-10 pt-52"
-      id="home"
-    >
+    <section className=" w-screen  p-7 pt-52" id="home">
       <div className="max-w-5xl ml-auto mr-auto relative">
         <div className="  flex flex-col items-center z-10 secondary-bg-color  p-10  rounded-xl  ">
           <div className="absolute -top-20 h-28 w-28  border-4 border-black  secondary-bg-color flex justify-center items-center rounded-full">
@@ -79,8 +80,8 @@ export default function Welcome() {
                 Front-End Web Developer
               </h4>
               <p className="text-slate-200 text-center lg:text-left">
-                I am a full stack web developer based in Dominican Republic with
-                experience developing applications in Asp.net Core and vuejs.|
+                I am a front-end web developer based in Canada with experience
+                developing applications in JavaScript and React.|
               </p>
               <h3 className="mt-5 mb-2 text-center lg:text-left">Contact</h3>
               <a href="mailto:alexmezsan@gmail.com">
