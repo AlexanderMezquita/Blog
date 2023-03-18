@@ -36,6 +36,14 @@ h4 {
   @apply text-lg font-bold
 }
 
+main {
+  @apply bg-black
+}
+
+.secondary-bg-color {
+  @apply bg-[#0D1117]
+}
+
 svg {
   fill: white;
 }
