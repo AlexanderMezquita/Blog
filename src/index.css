@@ -37,7 +37,7 @@ h4 {
 }
 
 main {
-  @apply bg-black text-white
+  @apply bg-black text-white min-h-screen
 }
 
 .secondary-bg-color {

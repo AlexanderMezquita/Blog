@@ -26,25 +26,28 @@ function App() {
 
   return (
     <>
-      {/* Top Bar shown when screen size is sm */}
+      <nav className="relative">
+        {/* Top Bar shown when screen size is sm */}
 
-      {showNav && (
         <TopBar
-          bgcolor="bg-[#080808]"
-          position=" fixed z-20 "
+          bgcolor="bg-[#080808] bg-opacity-50 backdrop-blur-sm "
+          position={`${
+            showNav && "top-[0]"
+          } z-20  fixed top-[-100px]  transition-all duration-300`}
+          // showDropdown={showDropdown}
+          // setShowDropdown={setShowDropdown}
+        />
+
+        <TopBar
+          position="bg-transparent absolute"
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
         />
-      )}
-      <TopBar
-        position="bg-transparent absolute"
-        showDropdown={showDropdown}
-        setShowDropdown={setShowDropdown}
-      />
+      </nav>
       <main>
         <Welcome />
         <Project />
-        <ContactMe />
+        {/* <ContactMe /> */}
       </main>
       <Footer />
     </>

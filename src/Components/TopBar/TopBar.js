@@ -44,9 +44,7 @@ export default function TopBar(props) {
   };
 
   return (
-    <nav
-      className={` fixed top-0 min-w-full  ${props.bgcolor} ${props.position} h-16 `}
-    >
+    <div className={`  min-w-full  ${props.bgcolor} ${props.position} h-16 `}>
       <div
         className={`  text-white flex  items-center justify-between p-2 max-w-screen-2xl m-auto   `}
       >
@@ -88,6 +86,6 @@ export default function TopBar(props) {
         </div>
       </div>
       {props.showDropdown && <DropDown />}
-    </nav>
+    </div>
   );
 }

@@ -43,7 +43,7 @@ export default function Welcome() {
       href: "https://www.linkedin.com/in/alexander-m%C3%A9zquita-a9294918a/",
     },
     {
-      name: "linkedin",
+      name: "CV",
       icon: FileDownload,
       description: "Get my CV ",
       // href: "https://github.com/AlexanderMezquita",
@@ -52,7 +52,7 @@ export default function Welcome() {
 
   const SkillsCloud = (props) => (
     <li>
-      <img alt="" src={props.src} className="w-14 h-14"></img>
+      <img alt="" src={props.src} className="w-[4.5rem] h-16"></img>
     </li>
   );
 
@@ -67,9 +67,9 @@ export default function Welcome() {
   );
 
   return (
-    <section className=" w-screen  p-7 pt-52" id="home">
+    <section className=" w-screen   p-5 pt-44" id="home">
       <div className="max-w-5xl ml-auto mr-auto relative">
-        <div className="  flex flex-col items-center z-10 secondary-bg-color  p-10  rounded-xl  ">
+        <div className="   flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl  ">
           <div className="absolute -top-20 h-28 w-28  border-4 border-black  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
@@ -85,7 +85,7 @@ export default function Welcome() {
               </p>
               <h3 className="mt-5 mb-2 text-center lg:text-left">Contact</h3>
               <a href="mailto:alexmezsan@gmail.com">
-                <p className=" transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
+                <p className=" w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
                   alexmezsan@gmail.com
                 </p>
               </a>
