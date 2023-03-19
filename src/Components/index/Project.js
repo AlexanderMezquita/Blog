@@ -31,11 +31,7 @@ export default function Project() {
   };
 
   const Technologies = (props) => {
-    return (
-      <p className="p-1 text-white rounded-md secondary-bg-color">
-        {props.title}
-      </p>
-    );
+    return <p className="p-1  rounded-md secondary-bg-color">{props.title}</p>;
   };
   return (
     <section className=" max-w-5xl ml-auto mr-auto  " id="portfolio">

@@ -59,18 +59,20 @@ export default function Welcome() {
   const SocialIcons = (props) => (
     <a
       href={props.href}
-      className="transition-all hover:scale-110 duration-300 dura cursor-pointer border-2 p-2  rounded-xl  hover:bg-white hover:text-black  border-white text-white"
+      className="flex justify-center items-center transition-all hover:scale-110 duration-300 cursor-pointer border-2 p-2 
+       rounded-xl  dark:hover:text-black dark:hover:bg-white 
+       dark:border-white border-black text-black dark:text-white hover:text-white hover:bg-black"
     >
       {props.description}
-      <props.icon />
+      <props.icon fontSize="small" />
     </a>
   );
 
   return (
-    <section className=" w-screen   p-5 pt-44 " id="home">
+    <section className=" w-screen   p-5 pt-36 " id="home">
       <div className="max-w-5xl ml-auto mr-auto relative">
         <div className="   flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl  ">
-          <div className="absolute -top-20 h-28 w-28  border-4 border-black  secondary-bg-color flex justify-center items-center rounded-full">
+          <div className="absolute -top-20 h-28 w-28  border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -79,7 +81,7 @@ export default function Welcome() {
               <h4 className="mb-5 text-center lg:text-left">
                 Front-End Web Developer
               </h4>
-              <p className="text-slate-200 text-center lg:text-left">
+              <p className="text-slate-500 dark:text-slate-300  text-center lg:text-left">
                 I am a front-end web developer based in Canada with experience
                 developing applications in JavaScript and React.|
               </p>

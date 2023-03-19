@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Welcome from "./Components/index/Welcome";
-import ContactMe from "./Components/index/ContactMe";
 import Footer from "./Components/index/Footer";
 import Project from "./Components/index/Project";
 import TopBar from "./Components/TopBar/TopBar";
@@ -8,6 +7,15 @@ import TopBar from "./Components/TopBar/TopBar";
 function App() {
   const [showNav, setShowNav] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [mode, setMode] = useState("dark");
+
+  const toggleTheme = () => {
+    if (mode === "light") {
+      setMode("dark");
+    } else {
+      setMode("light");
+    }
+  };
 
   const controlNavBar = () => {
     if (window.scrollY > 180) {
@@ -25,22 +33,21 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className={mode} id="page">
       <nav>
         {/* Top Bar shown when screen size is sm */}
         <TopBar
-          bgcolor="bg-[#080808] bg-opacity-50 backdrop-blur-sm "
-          // position={`${
-          //   !showNav && "-top-[60px] "
-          // } z-20 fixed  top-0 -top-0  transition-all duration-300`}
+          theme={toggleTheme}
+          mode={mode}
+          bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
           position={`${
-            !showNav ? "-top-[60px]" : "top-0"
+            !showNav ? "-top-[64px]" : "top-0"
           } z-20 fixed  transition-all duration-300`}
-          // showDropdown={showDropdown}
-          // setShowDropdown={setShowDropdown}
         />
 
         <TopBar
+          mode={mode}
+          theme={toggleTheme}
           position="bg-transparent absolute "
           showDropdown={showDropdown}
           setShowDropdown={setShowDropdown}
@@ -52,7 +59,7 @@ function App() {
         {/* <ContactMe /> */}
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
