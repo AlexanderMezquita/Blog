@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import js from "../assets/icons/js-logo.svg";
 import next from "../assets/icons/next.svg";
 import tailwind from "../assets/icons/tailwind.svg";
@@ -16,6 +17,8 @@ import firebase from "../assets/icons/firebase.svg";
 import { GitHub, LinkedIn, FileDownload } from "@mui/icons-material";
 
 export default function Welcome() {
+  const { t } = useTranslation();
+
   const skillsIcons = [
     { name: "javascript", src: js },
     { name: "next", src: next },
@@ -45,7 +48,7 @@ export default function Welcome() {
     {
       name: "CV",
       icon: FileDownload,
-      description: "Get my CV ",
+      description: t("cv"),
       // href: "https://github.com/AlexanderMezquita",
     },
   ];
@@ -69,23 +72,22 @@ export default function Welcome() {
   );
 
   return (
-    <section className=" w-screen   p-5 pt-36 " id="home">
-      <div className="max-w-5xl ml-auto mr-auto relative">
-        <div className="   flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl  ">
+    <section className=" max-w-5xl ml-auto mr-auto    p-5 pt-36 " id="home">
+      <div className="relative">
+        <div className=" flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl  ">
           <div className="absolute -top-20 h-28 w-28  border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-2 md:col-span-1">
-              <h2 className=" text-center lg:text-left">Hi, I'm Alex</h2>
-              <h4 className="mb-5 text-center lg:text-left">
-                Front-End Web Developer
-              </h4>
+              <h2 className=" text-center lg:text-left">{t("greet")}</h2>
+              <h4 className="mb-5 text-center lg:text-left">{t("title")}</h4>
               <p className="text-slate-500 dark:text-slate-300  text-center lg:text-left">
-                I am a front-end web developer based in Canada with experience
-                developing applications in JavaScript and React.|
+                {t("description")}|
               </p>
-              <h3 className="mt-5 mb-2 text-center lg:text-left">Contact</h3>
+              <h3 className="mt-5 mb-2 text-center lg:text-left">
+                {t("contact")}
+              </h3>
               <a href="mailto:alexmezsan@gmail.com">
                 <p className=" w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
                   alexmezsan@gmail.com
@@ -103,7 +105,7 @@ export default function Welcome() {
               </div>
             </div>
             <div className="col-span-2 md:col-span-1">
-              <h2 className="mb-5 text-center lg:text-left">My skills cloud</h2>
+              <h2 className="mb-5 text-center lg:text-left">{t("skills")}</h2>
               <ul className="flex flex-wrap gap-2 justify-center lg:justify-start ">
                 {skillsIcons.map((item, index) => (
                   <SkillsCloud key={index} src={item.src} />

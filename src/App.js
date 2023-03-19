@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import Welcome from "./Components/index/Welcome";
 import Footer from "./Components/index/Footer";
 import Project from "./Components/index/Project";
@@ -8,6 +10,18 @@ function App() {
   const [showNav, setShowNav] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
   const [mode, setMode] = useState("dark");
+
+  const { i18n } = useTranslation();
+  const [active, setActive] = useState("en");
+
+  const changeLanguage = (e) => {
+    i18n.changeLanguage(e);
+    if (e === "en") {
+      setActive("en");
+    } else {
+      setActive("fr");
+    }
+  };
 
   const toggleTheme = () => {
     if (mode === "light") {
@@ -39,6 +53,8 @@ function App() {
         <TopBar
           theme={toggleTheme}
           mode={mode}
+          active={active}
+          changeLanguage={changeLanguage}
           bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
           position={`${
             !showNav ? "-top-[64px]" : "top-0"
@@ -47,6 +63,8 @@ function App() {
 
         <TopBar
           mode={mode}
+          active={active}
+          changeLanguage={changeLanguage}
           theme={toggleTheme}
           position="bg-transparent absolute "
           showDropdown={showDropdown}

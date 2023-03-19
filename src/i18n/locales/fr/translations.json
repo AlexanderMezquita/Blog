@@ -1,0 +1,11 @@
+{
+    "greet": "Salut, je suis Alex",
+    "title": "Développeur Web Front-End",
+    "description": "Développeur Web Front-End basé au Canada avec de l'expérience dans le développement d'applications en JavaScript et React avec des bibliothèques d'interface utilisateur.",
+    "contact": "Informations de Contact",
+    "skills": "Mon nuage de compétences",
+    "cv": "Télécharge mon CV",
+    "mywork": "Mon travail",
+    "myworkd": "Ce sont quelques-uns des projets que j'ai construits.",
+    "myworkb": "Certains travaux"
+}

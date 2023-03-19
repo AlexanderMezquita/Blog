@@ -1,12 +1,14 @@
 import React from "react";
 import { Launch } from "@mui/icons-material";
 import Title from "./Title";
+import { useTranslation } from "react-i18next";
 
 export default function Project() {
+  const { t } = useTranslation();
   const Card = () => {
     return (
       <div className=" text-white  rounded-xl w-full lg:w-4/12 md:w-5/6 mx-auto lg:mx-0 lg:p-5 py-5 ">
-        <div className=" rounded-xl group shadow-lg  shadow-[#191f29] relative  overflow-hidden">
+        <div className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative  overflow-hidden">
           <img
             alt=""
             src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
@@ -34,11 +36,11 @@ export default function Project() {
     return <p className="p-1  rounded-md secondary-bg-color">{props.title}</p>;
   };
   return (
-    <section className=" max-w-5xl ml-auto mr-auto  " id="portfolio">
+    <section className=" max-w-5xl ml-auto mr-auto p-5  " id="portfolio">
       <Title
-        title="My work"
-        description="These are some of the projects I've built for clients."
-        backTitle="Some of my work"
+        title={t("mywork")}
+        description={t("myworkd")}
+        backTitle={t("myworkb")}
       />
       <div className="flex flex-wrap p-7 lg:p-0">
         <Card />
