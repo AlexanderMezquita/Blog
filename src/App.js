@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Welcome from "./components/index/welcome";
+// import Welcome from "./components/index/welcome";
 import Footer from "./components/index/footer";
 import Project from "./components/index/project";
 import TopBar from "./components/index/topbar";
@@ -71,7 +71,7 @@ function App() {
         />
       </nav>
       <main>
-        <Welcome />
+        {/* <Welcome /> */}
         <Project />
         {/* <ContactMe /> */}
       </main>
