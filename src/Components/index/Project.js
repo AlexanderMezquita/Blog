@@ -1,6 +1,6 @@
 import React from "react";
 import { Launch } from "@mui/icons-material";
-import Title from "./Title";
+import Title from "./title";
 import { useTranslation } from "react-i18next";
 
 export default function Project() {
