@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-
-import Welcome from "./Components/index/Welcome";
-import Footer from "./Components/index/Footer";
-import Project from "./Components/index/Project";
-import TopBar from "./Components/TopBar/TopBar";
+import Welcome from "./Components/index/welcome";
+import Footer from "./Components/index/footer";
+import Project from "./Components/index/project";
+import TopBar from "./Components/index/topbar";
 
 function App() {
   const [showNav, setShowNav] = useState(false);

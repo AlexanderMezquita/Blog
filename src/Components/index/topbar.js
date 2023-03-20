@@ -1,6 +1,6 @@
 import React from "react";
-import Languague from "../index/Language";
-import Switcher from "./Switcher";
+import Languague from "./language";
+import Switcher from "./switcher";
 
 export default function TopBar(props) {
   return (
