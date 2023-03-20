@@ -4,7 +4,7 @@ export default function Title(props) {
   return (
     <div className="flex flex-wrap mt-10 mb-5 md:p-3 lg:p-0 relative">
       <div className="absolute top-0 lg:-top-5 left-5 lg:left-5 h-32 overflow-y-hidden">
-        <h1 className=" text-6xl md:text-8xl font-bold dark:text-slate-700/20 text-slate-700/20">
+        <h1 className=" text-5xl sm:text-6xl md:text-7xl font-bold dark:text-slate-700/20 text-slate-700/20">
           {props.backTitle}
         </h1>
       </div>
