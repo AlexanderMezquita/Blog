@@ -41,11 +41,12 @@ h4 {
 }
 
 main {
-  @apply dark:bg-black dark:text-white text-black bg-[#F9FAFB] min-h-screen
+  @apply dark:bg-black dark:text-white text-black bg-[#F9FAFB] min-h-screen transition-colors duration-500
 }
 
+
 .secondary-bg-color {
-  @apply dark:bg-[#0D1117] bg-[#EDEFF2] 
+  @apply dark:bg-[#0D1117] bg-[#EDEFF2] transition-colors duration-500
 }
 
 

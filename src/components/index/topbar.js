@@ -12,11 +12,8 @@ export default function TopBar(props) {
       >
         <h3 className="px-1 ">Alexander</h3>
         <div className="flex justify-center pt-1 items-center gap-4">
-          <Languague
-            active={props.active}
-            changeLanguage={props.changeLanguage}
-          />
-          <Switcher theme={props.theme} mode={props.mode} />
+          <Languague />
+          <Switcher />
         </div>
       </div>
     </div>

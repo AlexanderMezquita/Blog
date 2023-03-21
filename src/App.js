@@ -1,13 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, createContext } from "react";
 import { useTranslation } from "react-i18next";
 import Welcome from "./components/index/welcome";
 import Footer from "./components/index/footer";
 import Project from "./components/index/project";
 import TopBar from "./components/index/topbar";
 
-function App() {
+export const ModeContext = createContext(undefined);
+export const LanContext = createContext(undefined);
+
+export function App() {
   const [showNav, setShowNav] = useState(false);
-  const [showDropdown, setShowDropdown] = useState(false);
   const [mode, setMode] = useState("dark");
 
   const { i18n } = useTranslation();
@@ -46,38 +48,28 @@ function App() {
   }, []);
 
   return (
-    <div className={mode} id="page">
-      <nav>
-        {/* Top Bar shown when screen size is sm */}
-        <TopBar
-          theme={toggleTheme}
-          mode={mode}
-          active={active}
-          changeLanguage={changeLanguage}
-          bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
-          position={`${
-            !showNav ? "-top-[64px]" : "top-0"
-          } z-20 fixed  transition-all duration-300`}
-        />
+    <LanContext.Provider value={{ active, changeLanguage }}>
+      <ModeContext.Provider value={{ mode, toggleTheme }}>
+        <div className={mode} id="page">
+          <nav>
+            {/* Top Bar shown when screen size is sm */}
+            <TopBar
+              bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
+              position={`${
+                !showNav ? "-top-[64px]" : "top-0"
+              } z-20 fixed  transition-all duration-300`}
+            />
 
-        <TopBar
-          mode={mode}
-          active={active}
-          changeLanguage={changeLanguage}
-          theme={toggleTheme}
-          position="bg-transparent absolute "
-          showDropdown={showDropdown}
-          setShowDropdown={setShowDropdown}
-        />
-      </nav>
-      <main>
-        <Welcome />
-        <Project />
-        {/* <ContactMe /> */}
-      </main>
-      <Footer />
-    </div>
+            <TopBar position="bg-transparent absolute " />
+          </nav>
+          <main>
+            <Welcome />
+            <Project />
+            {/* <ContactMe /> */}
+          </main>
+          <Footer />
+        </div>
+      </ModeContext.Provider>
+    </LanContext.Provider>
   );
 }
-
-export default App;
