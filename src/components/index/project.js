@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Launch } from "@mui/icons-material";
 import Title from "./title";
 import { useTranslation } from "react-i18next";
+import Billcrest from "../projects/billcrest";
 
 export default function Project() {
+  const [billcrestOpen, setBillcrestOpen] = useState(false);
   const { t } = useTranslation();
-  const Card = () => {
+
+  const Technologies = (props) => {
+    return (
+      <p className="p-1 text-xs  rounded-md secondary-bg-color">
+        {props.title}
+      </p>
+    );
+  };
+
+  const Card = (props) => {
     return (
       <div className=" text-white  rounded-xl w-full lg:w-4/12 md:w-5/6 mx-auto lg:mx-0 lg:px-3 p-5 py-5 ">
-        <div className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden">
+        <div
+          className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden"
+          onClick={() => props.openProject(true)}
+        >
           <img
             alt=""
             src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
@@ -21,20 +35,17 @@ export default function Project() {
           </div>
         </div>
         <div className=" py-3 flex flex-col ">
-          <h2 className="text-lg">BillCrest</h2>
-          <div className="flex flex-wrap mt-2 gap-2 text-xs">
-            <Technologies title={"React"} />
-            <Technologies title={"Tailwind"} />
-            <Technologies title={"Material UI"} />
+          <h2 className="text-lg">{props.title}</h2>
+          <div className="flex flex-wrap mt-2 gap-2 ">
+            {props.techs.map((item, index) => (
+              <Technologies key={index} title={item} />
+            ))}
           </div>
         </div>
       </div>
     );
   };
 
-  const Technologies = (props) => {
-    return <p className="p-1  rounded-md secondary-bg-color">{props.title}</p>;
-  };
   return (
     <section className=" max-w-5xl ml-auto mr-auto md:px-4" id="portfolio">
       <Title
@@ -43,10 +54,15 @@ export default function Project() {
         backTitle={t("myworkb")}
       />
       <div className="flex flex-wrap  lg:p-0">
+        <Billcrest open={billcrestOpen} close={setBillcrestOpen} />
+        <Card
+          openProject={setBillcrestOpen}
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+        />
+        {/* <Card />
         <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card /> */}
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import Switcher from "./switcher";
 export default function TopBar(props) {
   return (
     <div
-      className={` fixed min-w-full  ${props.bgcolor} ${props.position} h-16 `}
+      className={` z-20 transition-all duration-300 fixed min-w-full  ${props.bgcolor} ${props.position} h-16 `}
     >
       <div
         className={`  flex  items-center justify-between p-2 max-w-5xl px-4 m-auto   `}

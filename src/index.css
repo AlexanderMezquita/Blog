@@ -65,23 +65,10 @@ main {
   @apply transition-colors duration-100
 } */
 
-
-
-.gradient {
-  --size: 250px;
-  --speed: 50s;
-  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-
-  width: var(--size);
-  height: var(--size);
-  filter: blur(calc(var(--size) / 5));
-  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+.MuiDialogContent-root {
+  @apply dark:bg-lime-500 bg-[#0D1117] text-white
 }
 
-@media (min-width: 720px) {
-  .gradient {
-    --size: 500px;
-  }
+.MuiDialogActions-root {
+  @apply bg-[#161B22]
 }
-

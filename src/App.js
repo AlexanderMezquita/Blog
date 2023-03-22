@@ -56,8 +56,8 @@ export function App() {
             <TopBar
               bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
               position={`${
-                !showNav ? "-top-[64px]" : "top-0"
-              } z-20 fixed  transition-all duration-300`}
+                showNav ? "top-0" : "-top-[64px]"
+              } z-20  transition-all duration-300`}
             />
 
             <TopBar position="bg-transparent absolute " />
