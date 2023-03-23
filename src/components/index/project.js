@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Launch } from "@mui/icons-material";
 import Title from "./title";
 import { useTranslation } from "react-i18next";
@@ -7,6 +7,14 @@ import Billcrest from "../projects/billcrest";
 export default function Project() {
   const [billcrestOpen, setBillcrestOpen] = useState(false);
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (billcrestOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [billcrestOpen]);
 
   const Card = (props) => {
     return (

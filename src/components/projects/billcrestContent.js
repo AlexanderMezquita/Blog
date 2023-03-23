@@ -8,7 +8,7 @@ export default function BillCrestContent() {
         <img
           alt=""
           src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-          className="w-full lg:w-4/12 rounded-lg"
+          className="w-full lg:w-6/12 rounded-lg"
         />
         <div>
           <p>
