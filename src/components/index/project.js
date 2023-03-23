@@ -8,14 +8,6 @@ export default function Project() {
   const [billcrestOpen, setBillcrestOpen] = useState(false);
   const { t } = useTranslation();
 
-  const Technologies = (props) => {
-    return (
-      <p className="p-1 text-xs  rounded-md secondary-bg-color">
-        {props.title}
-      </p>
-    );
-  };
-
   const Card = (props) => {
     return (
       <div className=" text-white  rounded-xl w-full lg:w-4/12 md:w-5/6 mx-auto lg:mx-0 lg:px-3 p-5 py-5 ">
@@ -38,7 +30,12 @@ export default function Project() {
           <h2 className="text-lg">{props.title}</h2>
           <div className="flex flex-wrap mt-2 gap-2 ">
             {props.techs.map((item, index) => (
-              <Technologies key={index} title={item} />
+              <p
+                key={index}
+                className="p-1 text-xs  rounded-md secondary-bg-color"
+              >
+                {item}
+              </p>
             ))}
           </div>
         </div>
@@ -53,8 +50,12 @@ export default function Project() {
         description={t("myworkd")}
         backTitle={t("myworkb")}
       />
+
       <div className="flex flex-wrap  lg:p-0">
-        <Billcrest open={billcrestOpen} close={setBillcrestOpen} />
+        {billcrestOpen && (
+          <Billcrest open={billcrestOpen} close={setBillcrestOpen} />
+        )}
+
         <Card
           openProject={setBillcrestOpen}
           title={"Billcrest"}

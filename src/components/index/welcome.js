@@ -13,6 +13,7 @@ import jira from "../assets/icons/jira.svg";
 import materialui from "../assets/icons/materialui.svg";
 import npm from "../assets/icons/npm.svg";
 import firebase from "../assets/icons/firebase.svg";
+
 import { GitHub, LinkedIn, FileDownload } from "@mui/icons-material";
 
 export default function Welcome() {

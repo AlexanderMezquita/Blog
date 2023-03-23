@@ -65,10 +65,11 @@ main {
   @apply transition-colors duration-100
 } */
 
-.MuiDialogContent-root {
+/* .MuiDialogContent-root {
   @apply dark:bg-lime-500 bg-[#0D1117] text-white
-}
-
+} */
+/* 
 .MuiDialogActions-root {
   @apply bg-[#161B22]
-}
+} */
+
