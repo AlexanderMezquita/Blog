@@ -3,10 +3,16 @@ import { Launch } from "@mui/icons-material";
 import Title from "./title";
 import { useTranslation } from "react-i18next";
 import Billcrest from "../projects/billcrest";
+import billcrestImage from "../assets/billcrest/index.png";
 
 export default function Project() {
   const [billcrestOpen, setBillcrestOpen] = useState(false);
   const { t } = useTranslation();
+
+  const handlePopup = (e) => {
+    e.stopPropagation();
+    setBillcrestOpen(!billcrestOpen);
+  };
 
   useEffect(() => {
     if (billcrestOpen) {
@@ -21,11 +27,11 @@ export default function Project() {
       <div className=" text-white  rounded-xl w-full lg:w-1/2 md:w-5/6 mx-auto lg:mx-0 lg:px-3 p-5 py-5 ">
         <div
           className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden"
-          onClick={() => props.openProject(true)}
+          onClick={(e) => handlePopup(e)}
         >
           <img
             alt=""
-            src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
+            src={props.image}
             className=" w-full  group-hover:scale-105 group-hover:blur-md rounded-xl shadow-lg shadow-white transition-all duration-500  "
           />
           <div className=" inset-0 flex justify-center items-center opacity-0  absolute group-hover:opacity-100 w-full h-full transition-all duration-500">
@@ -60,19 +66,12 @@ export default function Project() {
       />
 
       <div className="flex flex-wrap  lg:p-0">
-        {billcrestOpen && (
-          <Billcrest open={billcrestOpen} close={setBillcrestOpen} />
-        )}
+        <Billcrest open={billcrestOpen} close={handlePopup} />
 
         <Card
-          openProject={setBillcrestOpen}
           title={"Billcrest"}
           techs={["React", "Tailwind", "Material UI"]}
-        />
-        <Card
-          openProject={setBillcrestOpen}
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
         />
       </div>
     </section>

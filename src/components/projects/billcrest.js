@@ -5,18 +5,24 @@ export default function Billcrest(props) {
   const { t } = useTranslation();
   return (
     <div
-      className="fixed inset-0 z-50 bg-opacity-50 flex justify-center items-center bg-black w-full p-4 overflow-auto "
-      onClick={() => props.close(false)}
+      className={`${
+        props.open ? " opacity-100 z-20  " : " opacity-0 -z-10"
+      } fixed inset-0  bg-opacity-50 flex justify-center items-center bg-black backdrop-blur-sm  w-full p-4 transition-all ease-out duration-300 `}
+      // onClick={(e) => props.close(e)}
     >
-      <div className=" max-h-full  max-w-4xl   ">
-        <div className=" bg-white rounded-lg shadow dark:bg-gray-700 max-h-screen ">
+      <div className=" max-h-full  max-w-4xl z-50 ">
+        <div
+          className={`${
+            props.open ? "scale-100" : "scale-90"
+          } bg-white rounded-lg shadow dark:bg-[#1f252e] max-h-screen transition-all  duration-300 `}
+        >
           <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
               Billcrest
             </h3>
             <button
               type="button"
-              onClick={() => props.close(false)}
+              onClick={(e) => props.close(e)}
               className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
             >
               <svg
@@ -38,7 +44,7 @@ export default function Billcrest(props) {
             <button
               type="button"
               className="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
-              onClick={() => props.close(false)}
+              onClick={(e) => props.close(e)}
             >
               {t("cancel")}
             </button>
