@@ -12,6 +12,7 @@
   "billcrest": {
     "des": "Hello",
     "p1": "Billcrest is a user interface with forms for creating, reading, updating, and deleting data. The state management would be handled by Redux, allowing for easy data manipulation and updates across the application.",
-    "try": "Try it out:"
+    "try": "Try it out:",
+    "header1": "What is it?"
   }
 }

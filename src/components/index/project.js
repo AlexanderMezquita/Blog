@@ -46,7 +46,7 @@ export default function Project() {
             {props.techs.map((item, index) => (
               <p
                 key={index}
-                className="p-1 text-xs  rounded-md secondary-bg-color"
+                className="p-1 text-xs dark:text-white  rounded-md secondary-bg-color"
               >
                 {item}
               </p>
@@ -67,7 +67,36 @@ export default function Project() {
 
       <div className="flex flex-wrap  lg:p-0">
         <Billcrest open={billcrestOpen} close={handlePopup} />
-
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />{" "}
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />{" "}
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />{" "}
+        <Card
+          title={"Billcrest"}
+          techs={["React", "Tailwind", "Material UI"]}
+          image={billcrestImage}
+        />{" "}
         <Card
           title={"Billcrest"}
           techs={["React", "Tailwind", "Material UI"]}

@@ -62,6 +62,8 @@ export default function Welcome() {
   const SocialIcons = (props) => (
     <a
       href={props.href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="flex justify-center items-center transition-all hover:scale-110 duration-300 cursor-pointer border-2 p-2 
        rounded-xl  dark:hover:text-black dark:hover:bg-white 
        dark:border-white border-black text-black dark:text-white hover:text-white hover:bg-black"
@@ -88,8 +90,12 @@ export default function Welcome() {
               <h3 className="mt-5 mb-2 text-center lg:text-left">
                 {t("contact")}
               </h3>
-              <a href="mailto:alexmezsan@gmail.com">
-                <p className=" w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
+              <a
+                href="mailto:alexmezsan@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className=" font-medium dark:text-white w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
                   alexmezsan@gmail.com
                 </p>
               </a>

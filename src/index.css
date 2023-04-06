@@ -23,7 +23,7 @@ html {
 }
 
 p {
-  @apply text-black dark:text-white
+  @apply text-black dark:text-slate-300
 }
 
 h1{
