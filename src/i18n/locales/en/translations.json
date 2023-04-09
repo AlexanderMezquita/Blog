@@ -16,7 +16,7 @@
     "header1": "What is it?",
     "header2": "What can you do in this app?",
     "modify": "Modify user personal information, such as name, email address, and phone number allowing users to manage their account settings.",
-    "manage": "Manage inventory: Track inventory levels in real-time and update inventory counts.",
+    "manage": "Track inventory levels in real-time and update inventory counts.",
     "crud": "CRUD: You can use the app to create, read, update and delete new records in the database."
   }
 }

@@ -14,13 +14,13 @@ export function App() {
   const [flag, setFlag] = useState(false);
 
   const { i18n } = useTranslation();
-  const [active, setActive] = useState("en");
+  const [language, setLanguage] = useState("en");
 
   const changeLanguage = (e) => {
     if (e === "en") {
-      setActive("en");
+      setLanguage("en");
     } else {
-      setActive("fr");
+      setLanguage("fr");
     }
   };
 
@@ -45,7 +45,7 @@ export function App() {
     }
 
     if (lanPreference) {
-      setActive(lanPreference);
+      setLanguage(lanPreference);
     }
     setFlag(true);
   }, []);
@@ -61,10 +61,10 @@ export function App() {
 
   useEffect(() => {
     if (flag) {
-      localStorage.setItem("userLanguage", active ? active : " ");
+      localStorage.setItem("userLanguage", language ? language : " ");
     }
-    i18n.changeLanguage(active);
-  }, [active, flag, i18n]);
+    i18n.changeLanguage(language);
+  }, [language, flag, i18n]);
 
   useEffect(() => {
     window.addEventListener("scroll", controlNavBar);
@@ -74,7 +74,7 @@ export function App() {
   }, []);
 
   return (
-    <LanContext.Provider value={{ active, changeLanguage }}>
+    <LanContext.Provider value={{ language, changeLanguage }}>
       <ModeContext.Provider value={{ mode, toggleTheme }}>
         <div id="page">
           <nav>

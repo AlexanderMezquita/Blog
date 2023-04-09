@@ -18,14 +18,8 @@
     
   <body>
     <script>
-  const selectedTheme = localStorage.getItem('prefersDarkMode') // returns a STRING
-  if(selectedTheme === "true"){
-    document.body.classList.add("dark")
-  } else {
-    document.body.classList.remove("dark")
-  }
-    // document.body.classList[selectedTheme ? 'add' : 'remove']('dark')
-
+  const selectedTheme = localStorage.getItem('prefersDarkMode') // returns a STRING 
+  document.body.classList[selectedTheme === "true" ? "add": "remove"]("dark")
 
     </script>
     <div id="root"></div>
