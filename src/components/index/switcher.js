@@ -13,11 +13,7 @@ export default function Switcher() {
         toggleTheme();
       }}
     >
-      {mode === "light" ? (
-        <DarkMode fontSize="small" />
-      ) : (
-        <LightMode fontSize="small" />
-      )}
+      {mode ? <DarkMode fontSize="small" /> : <LightMode fontSize="small" />}
     </div>
   );
 }

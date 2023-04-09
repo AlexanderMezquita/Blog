@@ -17,7 +17,6 @@ export function App() {
   const [active, setActive] = useState("en");
 
   const changeLanguage = (e) => {
-    i18n.changeLanguage(e);
     if (e === "en") {
       setActive("en");
     } else {
@@ -39,9 +38,14 @@ export function App() {
 
   useEffect(() => {
     const storedPreference = localStorage.getItem("prefersDarkMode");
+    const lanPreference = localStorage.getItem("userLanguage");
 
     if (storedPreference) {
       setMode(JSON.parse(storedPreference));
+    }
+
+    if (lanPreference) {
+      setActive(lanPreference);
     }
     setFlag(true);
   }, []);
@@ -49,11 +53,18 @@ export function App() {
   useEffect(() => {
     if (flag) {
       localStorage.setItem("prefersDarkMode", mode ? true : false);
-      // mode
-      //   ? document.body.classList.add("dark")
-      //   : document.body.classList.remove("dark");
     }
+    mode
+      ? document.body.classList.add("dark")
+      : document.body.classList.remove("dark");
   }, [mode, flag]);
+
+  useEffect(() => {
+    if (flag) {
+      localStorage.setItem("userLanguage", active ? active : " ");
+    }
+    i18n.changeLanguage(active);
+  }, [active, flag, i18n]);
 
   useEffect(() => {
     window.addEventListener("scroll", controlNavBar);
