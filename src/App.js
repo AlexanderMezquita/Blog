@@ -10,7 +10,8 @@ export const LanContext = createContext(undefined);
 
 export function App() {
   const [showNav, setShowNav] = useState(false);
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState();
+  const [flag, setFlag] = useState(false);
 
   const { i18n } = useTranslation();
   const [active, setActive] = useState("en");
@@ -25,11 +26,7 @@ export function App() {
   };
 
   const toggleTheme = () => {
-    if (mode === "light") {
-      setMode("dark");
-    } else {
-      setMode("light");
-    }
+    setMode(!mode);
   };
 
   const controlNavBar = () => {
@@ -41,6 +38,24 @@ export function App() {
   };
 
   useEffect(() => {
+    const storedPreference = localStorage.getItem("prefersDarkMode");
+
+    if (storedPreference) {
+      setMode(JSON.parse(storedPreference));
+    }
+    setFlag(true);
+  }, []);
+
+  useEffect(() => {
+    if (flag) {
+      localStorage.setItem("prefersDarkMode", mode ? true : false);
+      // mode
+      //   ? document.body.classList.add("dark")
+      //   : document.body.classList.remove("dark");
+    }
+  }, [mode, flag]);
+
+  useEffect(() => {
     window.addEventListener("scroll", controlNavBar);
     return () => {
       window.removeEventListener("scroll", controlNavBar);
@@ -50,7 +65,7 @@ export function App() {
   return (
     <LanContext.Provider value={{ active, changeLanguage }}>
       <ModeContext.Provider value={{ mode, toggleTheme }}>
-        <div className={mode} id="page">
+        <div id="page">
           <nav>
             {/* Top Bar shown when screen size is sm */}
             <TopBar

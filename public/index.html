@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" >
+   
   <head>
+
     <meta charset="utf-8" />
     <title>Alex's Portfolio | Front-End Web Developer</title>
     
@@ -13,10 +15,19 @@
   
     
   </head>
- 
+    
   <body>
+    <script>
+  const selectedTheme = localStorage.getItem('prefersDarkMode')
+    document.body.classList[selectedTheme ? 'add' : 'remove']('dark')
+
+
+    </script>
     <div id="root"></div>
   </body>
+  <script>
+  </script>
+  
     
   
 </html>

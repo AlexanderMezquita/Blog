@@ -2,18 +2,20 @@ import { useTranslation } from "react-i18next";
 import billcrestLoginPage from "../assets/billcrest/billcrestLoginPage.png";
 import list from "../assets/billcrest/lists.png";
 import accountSettings from "../assets/billcrest/accountSettings.png";
+import products from "../assets/billcrest/products.png";
 
 import { GitHub } from "@mui/icons-material";
 
 export default function BillCrestContent() {
   const { t } = useTranslation();
   return (
-    <div className=" max-h-[450px]  py-5 overflow-y-scroll">
-      <div className="flex flex-wrap lg:flex-nowrap w-full md:gap-9 gap-3 px-5 overflow-y-auto">
+    <section className=" max-h-[450px]  py-5 overflow-y-scroll">
+      <article className="flex flex-wrap lg:flex-nowrap w-full md:gap-9 gap-3 px-5 overflow-y-auto">
         <img
           alt=""
           src={billcrestLoginPage}
           className="w-full lg:w-6/12 rounded-lg"
+          id="imgProjects"
         />
         <div>
           <h3 className="mb-2">{t("billcrest.header1")}</h3>
@@ -42,42 +44,24 @@ export default function BillCrestContent() {
             </a>
           </div>
         </div>
-      </div>
+      </article>
 
-      <div className="flex  md:gap-9 p-5  overflow-y-auto">
+      <article className="flex  md:gap-9 p-5  overflow-y-auto">
         <div>
-          <h3>What can you do in this app?</h3>
+          <h3>{t("billcrest.header2")}</h3>
 
           <div className="flex flex-wrap  md:flex-nowrap gap-5 mt-4">
             <div className="flex md:basis-1/3 flex-col space-y-2">
-              <img
-                alt=""
-                src={accountSettings}
-                className="w-full   rounded-lg"
-              />
-              <p>
-                Modify user personal information, such as name, email address,
-                and phone number allowing users to manage their account
-                settings.
-              </p>
+              <img alt="" src={accountSettings} id="imgProjects" />
+              <p>{t("billcrest.modify")}</p>
             </div>
             <div className="flex md:basis-1/3 flex-col space-y-2">
-              <img
-                alt=""
-                src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-                className="  rounded-lg"
-              />
-              <p>
-                Manage inventory: Track inventory levels in real-time, update
-                inventory counts.
-              </p>
+              <img alt="" src={products} id="imgProjects" />
+              <p>{t("billcrest.manage")}</p>
             </div>
             <div className="flex md:basis-1/3 flex-col space-y-2">
-              <img alt="" src={list} className=" rounded-lg" />
-              <p>
-                CRUD: You can use the app to create, read, update and delete new
-                records in the database.
-              </p>
+              <img alt="" src={list} id="imgProjects" />
+              <p>{t("billcrest.crud")}</p>
             </div>
           </div>
           <div className="flex flex-wrap  md:flex-nowrap gap-5 mt-4">
@@ -85,7 +69,7 @@ export default function BillCrestContent() {
               <img
                 alt=""
                 src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-                className="w-full   rounded-lg"
+                id="imgProjects"
               />
               <p>
                 Process sales transactions: You can use the app to process sales
@@ -98,7 +82,7 @@ export default function BillCrestContent() {
               <img
                 alt=""
                 src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-                className="  rounded-lg"
+                id="imgProjects"
               />
               <p>
                 Provide a visual representation of data that is easy to
@@ -109,7 +93,7 @@ export default function BillCrestContent() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }

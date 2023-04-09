@@ -13,6 +13,10 @@
     "des": "bonjour",
     "p1": "Billcrest est une interface utilisateur avec des formulaires pour créer, lire, mettre à jour et supprimer des données. La gestion de l'état serait gérée par Redux, permettant une manipulation et des mises à jour de données faciles dans toute l'application.",
     "try": "Essayez-le:",
-    "header1": "Qu'est-ce que c'est ?"
+    "header1": "Qu'est-ce que c'est ?",
+    "header2": "Que pouvez-vous faire dans cette application?",
+    "modify": "Modifier les informations personnelles de l'utilisateur, telles que le nom, l'adresse e-mail et le numéro de téléphone, permettant aux utilisateurs de gérer les paramètres de leur compte.",
+    "manage": "Gérer l'inventaire : Suivre les niveaux de stock en temps réel et mettre à jour les quantités en stock.",
+    "crud": "CRUD : Vous pouvez utiliser l'application pour créer, lire, mettre à jour et supprimer de nouveaux enregistrements dans la base de données."
   }
 }

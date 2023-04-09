@@ -32,10 +32,11 @@ export default function Project() {
           <img
             alt=""
             src={props.image}
+            id="imgProjects"
             className=" w-full  group-hover:scale-105 group-hover:blur-md rounded-xl shadow-lg shadow-white transition-all duration-500  "
           />
           <div className=" inset-0 flex justify-center items-center opacity-0  absolute group-hover:opacity-100 w-full h-full transition-all duration-500">
-            <div className=" rounded-full border-2  hover:scale-110 transition-all duration-300 bg-white/20 bg-opacity-100 border-white p-5 ">
+            <div className=" rounded-full border-2  hover:scale-110 transition-all duration-300 bg-white/20 bg-opacity-100 border-neutral-400 text-neutral-400 p-5 ">
               <Launch />
             </div>
           </div>
