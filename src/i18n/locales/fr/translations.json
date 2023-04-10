@@ -17,6 +17,8 @@
     "header2": "Que pouvez-vous faire dans cette application?",
     "modify": "Modifier les informations personnelles de l'utilisateur, telles que le nom, l'adresse e-mail et le numéro de téléphone, permettant aux utilisateurs de gérer les paramètres de leur compte.",
     "manage": "Gérer l'inventaire: Suivre les niveaux de stock en temps réel et mettre à jour les quantités en stock.",
-    "crud": "CRUD: Vous pouvez utiliser l'application pour créer, lire, mettre à jour et supprimer de nouveaux enregistrements dans la base de données."
+    "crud": "CRUD: Vous pouvez utiliser l'application pour créer, lire, mettre à jour et supprimer de nouveaux enregistrements dans la base de données.",
+    "charts": "Fournir une représentation visuelle de données facile à comprendre et à interpréter à l'aide de graphiques. Cela peut aider les utilisateurs à identifier rapidement les tendances et les schémas, et à prendre des décisions éclairées en se basant sur les données.",
+    "invoice": "Traiter les transactions de vente: Vous pouvez utiliser l'application pour traiter les transactions de vente, y compris accepter les paiements par carte de crédit, carte de débit ou en espèces. L'application peut également calculer le coût total de l'achat, y compris les taxes et les éventuelles réductions."
   }
 }

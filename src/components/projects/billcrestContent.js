@@ -3,6 +3,8 @@ import billcrestLoginPage from "../assets/billcrest/billcrestLoginPage.png";
 import list from "../assets/billcrest/lists.png";
 import accountSettings from "../assets/billcrest/accountSettings.png";
 import products from "../assets/billcrest/products.png";
+import invoice from "../assets/billcrest/invoice.png";
+import charts from "../assets/billcrest/charts.png";
 
 import { GitHub } from "@mui/icons-material";
 
@@ -66,30 +68,12 @@ export default function BillCrestContent() {
           </div>
           <div className="flex flex-wrap  md:flex-nowrap gap-5 mt-4">
             <div className="flex md:basis-1/2 flex-col space-y-2">
-              <img
-                alt=""
-                src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-                id="imgProjects"
-              />
-              <p>
-                Process sales transactions: You can use the app to process sales
-                transactions, including accepting payment by credit card, debit
-                card, or cash. The app can also calculate the total cost of the
-                purchase, including taxes and any discounts.
-              </p>
+              <img alt="" src={invoice} id="imgProjects" />
+              <p>{t("billcrest.invoice")}</p>
             </div>
             <div className="flex md:basis-1/2 flex-col space-y-2">
-              <img
-                alt=""
-                src="https://media.planview.com/clarizen/wp-content/upload/2018/05/project-planning.jpg"
-                id="imgProjects"
-              />
-              <p>
-                Provide a visual representation of data that is easy to
-                understand and interpret using charts. This can help users to
-                quickly identify trends and patterns, and make informed
-                decisions based on the data.
-              </p>
+              <img alt="" src={charts} id="imgProjects" />
+              <p>{t("billcrest.charts")}</p>
             </div>
           </div>
         </div>

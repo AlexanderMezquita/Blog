@@ -17,6 +17,8 @@
     "header2": "What can you do in this app?",
     "modify": "Modify user personal information, such as name, email address, and phone number allowing users to manage their account settings.",
     "manage": "Track inventory levels in real-time and update inventory counts.",
-    "crud": "CRUD: You can use the app to create, read, update and delete new records in the database."
+    "crud": "CRUD: You can use the app to create, read, update and delete new records in the database.",
+    "charts": "Provide a visual representation of data that is easy to understand and interpret using charts. This can help users to quickly identify trends and patterns, and make informed decisions based on the data.",
+    "invoice": "Process sales transactions: You can use the app to process sales transactions, including accepting payment by credit card, debit card, or cash. The app can also calculate the total cost of the purchase, including taxes and any discounts."
   }
 }

@@ -73,36 +73,6 @@ export default function Project() {
           techs={["React", "Tailwind", "Material UI"]}
           image={billcrestImage}
         />
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />{" "}
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />{" "}
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />{" "}
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />{" "}
-        <Card
-          title={"Billcrest"}
-          techs={["React", "Tailwind", "Material UI"]}
-          image={billcrestImage}
-        />
       </div>
     </section>
   );
