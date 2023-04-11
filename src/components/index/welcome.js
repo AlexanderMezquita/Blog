@@ -55,7 +55,11 @@ export default function Welcome() {
 
   const SkillsCloud = (props) => (
     <li>
-      <img alt="" src={props.src} className="w-[4.5rem] h-16"></img>
+      <img
+        alt=""
+        src={props.src}
+        className="w-[4.5rem] h-20 svgAnimationIn "
+      ></img>
     </li>
   );
 
@@ -74,18 +78,19 @@ export default function Welcome() {
   );
 
   return (
-    <section className=" max-w-5xl ml-auto mr-auto    p-5 pt-36 " id="home">
+    <section className=" max-w-5xl ml-auto mr-auto    p-5 pt-32 " id="home">
       <div className="relative">
         <div className=" flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl ">
-          <div className="absolute -top-20 h-28 w-28  border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
+          <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="col-span-2 md:col-span-1">
+            <div className="col-span-2 md:col-span-1 animationIn">
               <h2 className=" text-center lg:text-left">{t("greet")}</h2>
               <h4 className="mb-5 text-center lg:text-left">{t("title")}</h4>
-              <p className="text-slate-500 dark:text-slate-300  text-center lg:text-left">
-                {t("description")}|
+              <p className="text-slate-500  dark:text-slate-300  text-center lg:text-left">
+                {t("description")}
+                <span className="pulseAnimation">|</span>
               </p>
               <h3 className="mt-5 mb-2 text-center lg:text-left">
                 {t("contact")}
@@ -95,7 +100,7 @@ export default function Welcome() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <p className=" font-medium dark:text-white w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
+                <p className="  font-medium dark:text-white w-full overflow-auto transition-all duration-100  underline hover:font-bold underline-offset-4 text-center lg:text-left mb-5">
                   alexmezsan@gmail.com
                 </p>
               </a>
@@ -112,7 +117,7 @@ export default function Welcome() {
             </div>
             <div className="col-span-2 md:col-span-1">
               <h2 className="mb-5 text-center lg:text-left">{t("skills")}</h2>
-              <ul className="flex flex-wrap gap-2 justify-center lg:justify-start ">
+              <ul className="flex flex-wrap gap-2 justify-center lg:justify-start  ">
                 {skillsIcons.map((item, index) => (
                   <SkillsCloud key={index} src={item.src} />
                 ))}

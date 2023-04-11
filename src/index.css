@@ -54,6 +54,78 @@ main {
   @apply dark:bg-[#0D1117] bg-[#EDEFF2] transition-colors duration-500
 }
 
+.animationIn {
+  animation: transitionIn 2s ;
+}
+
+.svgAnimationIn {
+  animation-name: svgIn;
+    animation-duration: 2s;
+    animation-delay: 0, 1s;
+}
+
+.meIconTransition {
+  animation: meIcon 1s 2s backwards;
+  
+    
+}
+
+.pulseAnimation {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+@keyframes pulse {
+
+  0%
+   {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes svgIn {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+@keyframes transitionIn {
+  0% {
+      transform: translateY(90px); }
+  50% {
+    transform: translateY(-5px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+@keyframes meIcon {
+  0% {
+    transform: translateY(-200px);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
 
 /* body {
   margin: 0;
