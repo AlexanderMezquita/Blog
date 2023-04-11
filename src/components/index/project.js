@@ -66,7 +66,7 @@ export default function Project() {
         backTitle={t("myworkb")}
       />
 
-      <div className="flex flex-wrap animationIn  lg:p-0">
+      <div className="flex flex-wrap animationIn lg:p-0">
         <Billcrest open={billcrestOpen} close={handlePopup} />
         <Card
           title={"Billcrest"}
