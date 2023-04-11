@@ -58,6 +58,25 @@ main {
   animation: transitionIn 2s ;
 }
 
+#skills li {
+    animation: fadeIn 1s backwards; 
+
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .svgAnimationIn {
   animation-name: svgIn;
     animation-duration: 2s;
@@ -65,7 +84,7 @@ main {
 }
 
 .meIconTransition {
-  animation: meIcon 1s 2s backwards;
+  animation: meIcon 1s 1.5s backwards;
   
     
 }

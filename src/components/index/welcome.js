@@ -20,18 +20,18 @@ export default function Welcome() {
   const { t } = useTranslation();
 
   const skillsIcons = [
-    { name: "javascript", src: js },
-    { name: "next", src: next },
-    { name: "tailwind", src: tailwind },
-    { name: "react", src: react },
-    { name: "html", src: html },
-    { name: "css", src: css },
-    { name: "redux", src: redux },
-    { name: "git", src: git },
-    { name: "jira", src: jira },
-    { name: "materialui", src: materialui },
-    { name: "npm", src: npm },
-    { name: "firebase", src: firebase },
+    { name: "javascript", src: js, delay: 0 },
+    { name: "next", src: next, delay: 0.3 },
+    { name: "tailwind", src: tailwind, delay: 0.6 },
+    { name: "react", src: react, delay: 0.9 },
+    { name: "html", src: html, delay: 1.2 },
+    { name: "css", src: css, delay: 1.5 },
+    { name: "redux", src: redux, delay: 1.8 },
+    { name: "git", src: git, delay: 2.1 },
+    { name: "jira", src: jira, delay: 2.4 },
+    { name: "materialui", src: materialui, delay: 2.7 },
+    { name: "npm", src: npm, delay: 3 },
+    { name: "firebase", src: firebase, delay: 3.3 },
   ];
 
   const socialsIcons = [
@@ -52,16 +52,6 @@ export default function Welcome() {
       // href: "https://github.com/AlexanderMezquita",
     },
   ];
-
-  const SkillsCloud = (props) => (
-    <li>
-      <img
-        alt=""
-        src={props.src}
-        className="w-[4.5rem] h-20 svgAnimationIn "
-      ></img>
-    </li>
-  );
 
   const SocialIcons = (props) => (
     <a
@@ -117,10 +107,17 @@ export default function Welcome() {
             </div>
             <div className="col-span-2 md:col-span-1">
               <h2 className="mb-5 text-center lg:text-left">{t("skills")}</h2>
-              <ul className="flex flex-wrap gap-2 justify-center lg:justify-start  ">
-                {skillsIcons.map((item, index) => (
-                  <SkillsCloud key={index} src={item.src} />
-                ))}
+              <ul
+                className="flex flex-wrap gap-2 justify-center lg:justify-start"
+                id="skills"
+              >
+                {skillsIcons.map((item, index) => {
+                  return (
+                    <li style={{ animationDelay: `${item.delay}s` }}>
+                      <img alt="" src={item.src} className="w-[4.5rem] h-20 " />
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
