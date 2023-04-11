@@ -39,33 +39,26 @@ export default function Welcome() {
       name: "github",
       icon: GitHub,
       href: "https://github.com/AlexanderMezquita",
+      delay: 0.5,
     },
     {
       name: "linkedin",
       icon: LinkedIn,
       href: "https://www.linkedin.com/in/alexander-m%C3%A9zquita-a9294918a/",
+      delay: 0.7,
     },
     {
       name: "CV",
       icon: FileDownload,
       description: t("cv"),
       // href: "https://github.com/AlexanderMezquita",
+      delay: 0.9,
     },
   ];
 
-  const SocialIcons = (props) => (
-    <a
-      href={props.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="flex justify-center items-center transition-all hover:scale-110 duration-300 cursor-pointer border-2 p-2 
-       rounded-xl  dark:hover:text-black dark:hover:bg-white 
-       dark:border-white border-black text-black dark:text-white hover:text-white hover:bg-black"
-    >
-      {props.description}
-      <props.icon fontSize="small" />
-    </a>
-  );
+  // const SocialIcons = (props) => (
+
+  // );
 
   return (
     <section className=" max-w-5xl ml-auto mr-auto    p-5 pt-32 " id="home">
@@ -96,12 +89,25 @@ export default function Welcome() {
               </a>
               <div className="flex flex-wrap justify-center lg:justify-start gap-5">
                 {socialsIcons.map((item, index) => (
-                  <SocialIcons
+                  // <SocialIcons
+                  //   href={item.href}
+                  //   key={index}
+                  //   icon={item.icon}
+                  //   description={item.description}
+                  //   delay={item.delay}
+                  // />
+                  <a
                     href={item.href}
-                    key={index}
-                    icon={item.icon}
-                    description={item.description}
-                  />
+                    style={{ animationDelay: `${item.delay}s` }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center transition-all hover:scale-110 duration-300 cursor-pointer border-2 p-2 
+       rounded-xl  dark:hover:text-black dark:hover:bg-white 
+       dark:border-white border-black buttonAnimation text-black dark:text-white hover:text-white hover:bg-black"
+                  >
+                    {item.description}
+                    <item.icon fontSize="small" />
+                  </a>
                 ))}
               </div>
             </div>

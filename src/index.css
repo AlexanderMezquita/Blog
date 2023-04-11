@@ -54,10 +54,6 @@ main {
   @apply dark:bg-[#0D1117] bg-[#EDEFF2] transition-colors duration-500
 }
 
-.animationIn {
-  animation: transitionIn 2s ;
-}
-
 #skills li {
     animation: fadeIn 1s backwards; 
 
@@ -69,54 +65,16 @@ main {
     transform: translateY(25px);
   }
   50% {
+        opacity: 1;
     transform: translateY(-25px);
   }
   100%{
-    opacity: 1;
     transform: translateY(0px);
   }
 }
 
-.svgAnimationIn {
-  animation-name: svgIn;
-    animation-duration: 2s;
-    animation-delay: 0, 1s;
-}
-
-.meIconTransition {
-  animation: meIcon 1s 1.5s backwards;
-  
-    
-}
-
-.pulseAnimation {
-  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-
-@keyframes pulse {
-
-  0%
-   {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes svgIn {
-  from {
-    opacity: 0;
-    transform: translateY(200px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
+.animationIn {
+  animation: transitionIn 2s;
 }
 
 @keyframes transitionIn {
@@ -129,6 +87,26 @@ main {
     transform: translateY(0);
   }
   
+}
+.pulseAnimation {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+@keyframes pulse {
+
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.meIconTransition {
+  animation: meIcon 1s 1.5s backwards;
+
 }
 
 @keyframes meIcon {
@@ -146,26 +124,23 @@ main {
 
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
+.buttonAnimation {
+  animation: buttonAn 1s 1s backwards;
+}
+
+@keyframes buttonAn {
+  0%{
+        opacity: 0;
+    scale: 0;
+  }
+  50%{
+    scale: 1.1;
+  }
+
+  100%{
+    opacity: 1;
+    scale: 1;
+  }
   
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* #page * {
-  @apply transition-colors duration-100
-} */
-
-/* .MuiDialogContent-root {
-  @apply dark:bg-lime-500 bg-[#0D1117] text-white
-} */
-/* 
-.MuiDialogActions-root {
-  @apply bg-[#161B22]
-} */
+}
 
