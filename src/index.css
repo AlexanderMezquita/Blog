@@ -55,19 +55,28 @@ main {
 }
 
 #skills li {
-    animation: fadeIn 1s backwards; 
+    animation: fadeIn 2s  backwards; 
 
 }
 
 @keyframes fadeIn {
   0%{
     opacity: 0;
-    transform: translateY(25px);
+    transform: translateY(90px);
   }
-  50% {
+  20% {
         opacity: 1;
-    transform: translateY(-25px);
+    transform: translateY(-20px);
   }
+  
+40%{
+        transform: translateY(4px);
+  }
+
+    60% {
+      transform: translateY(-4px);
+    }
+  
   100%{
     transform: translateY(0px);
   }

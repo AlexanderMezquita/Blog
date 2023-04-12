@@ -21,17 +21,17 @@ export default function Welcome() {
 
   const skillsIcons = [
     { name: "javascript", src: js, delay: 0 },
-    { name: "next", src: next, delay: 0.3 },
-    { name: "tailwind", src: tailwind, delay: 0.6 },
-    { name: "react", src: react, delay: 0.9 },
-    { name: "html", src: html, delay: 1.2 },
-    { name: "css", src: css, delay: 1.5 },
-    { name: "redux", src: redux, delay: 1.8 },
-    { name: "git", src: git, delay: 2.1 },
-    { name: "jira", src: jira, delay: 2.4 },
-    { name: "materialui", src: materialui, delay: 2.7 },
-    { name: "npm", src: npm, delay: 3 },
-    { name: "firebase", src: firebase, delay: 3.3 },
+    { name: "next", src: next, delay: 0.2 },
+    { name: "tailwind", src: tailwind, delay: 0.4 },
+    { name: "react", src: react, delay: 0.6 },
+    { name: "html", src: html, delay: 0.8 },
+    { name: "css", src: css, delay: 1 },
+    { name: "redux", src: redux, delay: 1.2 },
+    { name: "git", src: git, delay: 1.4 },
+    { name: "jira", src: jira, delay: 1.6 },
+    { name: "materialui", src: materialui, delay: 1.8 },
+    { name: "npm", src: npm, delay: 2 },
+    { name: "firebase", src: firebase, delay: 2.2 },
   ];
 
   const socialsIcons = [
