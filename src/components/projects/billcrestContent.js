@@ -22,6 +22,7 @@ export default function BillCrestContent() {
         <div>
           <h3 className="mb-2">{t("billcrest.header1")}</h3>
           <p className="dark:text-slate-300">{t("billcrest.p1")}</p>
+
           <h3 className=" my-2">{t("billcrest.try")}</h3>
           <div className="flex justify-center space-x-3 mb-2">
             <a
@@ -50,6 +51,10 @@ export default function BillCrestContent() {
 
       <article className="flex  md:gap-9 p-5  overflow-y-auto">
         <div>
+          {/* <p className="text-xs mb-2">
+            Note: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo
+            dolore sed, facere
+          </p> */}
           <h3>{t("billcrest.header2")}</h3>
 
           <div className="flex flex-wrap  md:flex-nowrap gap-5 mt-4">

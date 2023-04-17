@@ -24,8 +24,8 @@ export default function Welcome() {
     { name: "next", src: next, delay: 0.2 },
     { name: "tailwind", src: tailwind, delay: 0.4 },
     { name: "react", src: react, delay: 0.6 },
-    { name: "html", src: html, delay: 0.8 },
-    { name: "css", src: css, delay: 1 },
+    { name: "html5", src: html, delay: 0.8 },
+    { name: "css3", src: css, delay: 1 },
     { name: "redux", src: redux, delay: 1.2 },
     { name: "git", src: git, delay: 1.4 },
     { name: "jira", src: jira, delay: 1.6 },
@@ -89,14 +89,8 @@ export default function Welcome() {
               </a>
               <div className="flex flex-wrap justify-center lg:justify-start gap-5">
                 {socialsIcons.map((item, index) => (
-                  // <SocialIcons
-                  //   href={item.href}
-                  //   key={index}
-                  //   icon={item.icon}
-                  //   description={item.description}
-                  //   delay={item.delay}
-                  // />
                   <a
+                    key={index}
                     href={item.href}
                     style={{ animationDelay: `${item.delay}s` }}
                     target="_blank"
@@ -119,8 +113,19 @@ export default function Welcome() {
               >
                 {skillsIcons.map((item, index) => {
                   return (
-                    <li style={{ animationDelay: `${item.delay}s` }}>
-                      <img alt="" src={item.src} className="w-[4.5rem] h-20 " />
+                    <li
+                      style={{ animationDelay: `${item.delay}s` }}
+                      key={index}
+                      className="relative"
+                    >
+                      <img
+                        alt=""
+                        src={item.src}
+                        className="w-[4.5rem] h-20 svgHover "
+                      />
+                      <p className="absolute bottom-1 font-bold   text-xs transition-all duration-500">
+                        {item.name}
+                      </p>
                     </li>
                   );
                 })}

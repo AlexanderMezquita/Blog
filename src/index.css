@@ -153,3 +153,44 @@ main {
   
 }
 
+#skills li p {
+  opacity: 0;
+  z-index: 1;
+}
+
+#skills  li:hover p {
+  opacity: 1;
+  z-index: 1;
+}
+
+.svgHover{
+  animation: out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes out {
+  from {
+    transform: translateY(-10px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+.svgHover:hover{
+  animation-name: in;
+  animation-duration: 1s infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes in {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+
+
