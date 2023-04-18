@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This [Portfolio](https://www.alefolio.com/) helps increase my visibility to potential employers and enhance my chances of getting hired by showcasing my skills and experience in a visually appealing and organized manner.
+
+                                                                       👉 [Live Site](https://www.alefolio.com/) 👈
 
 ## Available Scripts
 
