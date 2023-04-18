@@ -2,7 +2,7 @@
 
 This [Portfolio](https://www.alefolio.com/) helps increase my visibility to potential employers and enhance my chances of getting hired by showcasing my skills and experience in a visually appealing and organized manner.
 
-                                                       👉 [Live Site](https://www.alefolio.com/) 👈
+                                           
 
 ## Overview
 
