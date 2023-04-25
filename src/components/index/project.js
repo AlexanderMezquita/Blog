@@ -3,31 +3,37 @@ import { Launch } from "@mui/icons-material";
 import Title from "./title";
 import { useTranslation } from "react-i18next";
 import Billcrest from "../projects/billcrest";
+import MovieSearch from "../projects/movieSearch";
 import billcrestImage from "../assets/billcrest/index.png";
+import movieSearchImage from "../assets/searchApp/searchapp.png";
 
 export default function Project() {
   const [billcrestOpen, setBillcrestOpen] = useState(false);
+  const [movieSearchOpen, setMovieSearchOpen] = useState(false);
+
   const { t } = useTranslation();
 
-  const handlePopup = (e) => {
-    e.stopPropagation();
+  const handleBillcrestPopUp = () => {
     setBillcrestOpen(!billcrestOpen);
+  };
+  const handleMovieSearchPopUp = () => {
+    setMovieSearchOpen(!movieSearchOpen);
   };
 
   useEffect(() => {
-    if (billcrestOpen) {
+    if (billcrestOpen || movieSearchOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-  }, [billcrestOpen]);
+  }, [billcrestOpen, movieSearchOpen]);
 
   const Card = (props) => {
     return (
       <div className=" text-white  rounded-xl w-full lg:w-1/2 md:w-5/6 mx-auto lg:mx-0 lg:px-3 p-5 py-5 ">
         <div
           className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden"
-          onClick={(e) => handlePopup(e)}
+          onClick={props.handlePopup}
         >
           <img
             alt=""
@@ -59,19 +65,27 @@ export default function Project() {
   };
 
   return (
-    <section className=" max-w-5xl ml-auto mr-auto md:px-4" id="portfolio">
+    <section className="" id="portfolio">
       <Title
         title={t("mywork")}
         description={t("myworkd")}
         backTitle={t("myworkb")}
       />
 
-      <div className="flex flex-wrap animationIn lg:p-0">
-        <Billcrest open={billcrestOpen} close={handlePopup} />
+      <div className="flex flex-wrap lg:p-0">
+        <Billcrest open={billcrestOpen} close={handleBillcrestPopUp} />
+        <MovieSearch open={movieSearchOpen} close={handleMovieSearchPopUp} />
         <Card
-          title={"Billcrest"}
+          title="Billcrest"
           techs={["React", "Tailwind", "Material UI"]}
           image={billcrestImage}
+          handlePopup={handleBillcrestPopUp}
+        />
+        <Card
+          title="Movie Search"
+          techs={["Vite + React", "CSS"]}
+          image={movieSearchImage}
+          handlePopup={handleMovieSearchPopUp}
         />
       </div>
     </section>

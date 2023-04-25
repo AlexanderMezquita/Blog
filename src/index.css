@@ -18,7 +18,7 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  @apply dark:bg-black dark:text-white text-black bg-[#F9FAFB]  transition-colors duration-500
  
 }
 
@@ -41,8 +41,8 @@ h4 {
   @apply text-lg font-bold dark:text-white text-black
 }
 
-main {
-  @apply dark:bg-black dark:text-white text-black bg-[#F9FAFB] min-h-screen transition-colors duration-500
+#page {
+  @apply dark:bg-black dark:text-white text-black bg-[#F9FAFB] transition-colors duration-500
 }
 
 #imgProjects{
