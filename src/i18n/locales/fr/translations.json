@@ -13,12 +13,21 @@
     "des": "bonjour",
     "p1": "Billcrest est une interface utilisateur avec des formulaires pour créer, lire, mettre à jour et supprimer des données. La gestion de l'état serait gérée par Redux, permettant une manipulation et des mises à jour de données faciles dans toute l'application.",
     "try": "Essayez-le:",
-    "header1": "Qu'est-ce que c'est ?",
+    "header1": "Qu'est-ce que c'est?",
     "header2": "Que pouvez-vous faire dans cette application?",
     "modify": "Modifier les informations personnelles de l'utilisateur, telles que le nom, l'adresse e-mail et le numéro de téléphone, permettant aux utilisateurs de gérer les paramètres de leur compte.",
     "manage": "Gérer l'inventaire: Suivre les niveaux de stock en temps réel et mettre à jour les quantités en stock.",
     "crud": "CRUD: Vous pouvez utiliser l'application pour créer, lire, mettre à jour et supprimer de nouveaux enregistrements dans la base de données.",
     "charts": "Fournir une représentation visuelle de données facile à comprendre et à interpréter à l'aide de graphiques. Cela peut aider les utilisateurs à identifier rapidement les tendances et les schémas, et à prendre des décisions éclairées en se basant sur les données.",
     "invoice": "Traiter les transactions de vente: Vous pouvez utiliser l'application pour traiter les transactions de vente, y compris accepter les paiements par carte de crédit, carte de débit ou en espèces. L'application peut également calculer le coût total de l'achat, y compris les taxes et les éventuelles réductions."
+  },
+  "moviesearch": {
+    "p1": "Il s'agit d'une petite application web qui permet aux utilisateurs de rechercher des informations sur des films, telles que les titres de films et la date de sortie. L'application récupère des données à partir d'une API (The Open Movie DataBase, OMDb) et affiche les résultats sous une forme conviviale pour l'utilisateur.",
+    "header1": "Qu'est-ce que j'ai appris?",
+    "li1": "Pagination de données que peut aider à diviser les données en plus petites parties qui peuvent être chargées au besoin.",
+    "li2": "Manipuler et gérer les données récupérées à partir des APIs pour une récupération plus rapide.",
+    "li3": "Mettre en place des algorithmes de recherche qui peuvent gérer différentes requêtes et filtres de recherche.",
+    "li4": "Travailler avec des APIs tierces pour récupérer les données de films.",
+    "li5": "Optimiser la performance de l'application pour des temps de chargement plus rapides et une expérience utilisateur plus fluide."
   }
 }

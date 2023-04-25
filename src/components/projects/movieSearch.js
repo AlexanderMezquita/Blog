@@ -1,5 +1,6 @@
 // import BillCrestContent from "./billcrestContent";
 import { useTranslation } from "react-i18next";
+import MovieSearchContent from "./movieSearchContent";
 
 export default function MovieSearch(props) {
   const { t } = useTranslation();
@@ -36,7 +37,7 @@ export default function MovieSearch(props) {
           </button>
         </div>
 
-        {/* <BillCrestContent /> */}
+        <MovieSearchContent />
 
         <div className="flex justify-end items-center p-5 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
           <button

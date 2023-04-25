@@ -20,5 +20,14 @@
     "crud": "CRUD: You can use the app to create, read, update and delete new records in the database.",
     "charts": "Provide a visual representation of data that is easy to understand and interpret using charts. This can help users to quickly identify trends and patterns, and make informed decisions based on the data.",
     "invoice": "Process sales transactions: You can use the app to process sales transactions, including accepting payment by credit card, debit card, or cash. The app can also calculate the total cost of the purchase, including taxes and any discounts."
+  },
+  "moviesearch": {
+    "p1": "This is a small web-based application that allows users to search for information about movies, such as movie titles and release date. The app retrieves data from an API(The Open Movie DataBase, OMDb) and displays the results in a user-friendly format.",
+    "header1": "What did I learn?",
+    "li1": "Paginate data that can help breaking the data into smaller chunks that can be loaded as needed.",
+    "li2": "Manipulate and manage data retrieved from APIs for faster retrieval.",
+    "li3": "Implement search algorithms that can handle various search queries and filters.",
+    "li4": "Work with third-party APIs to retrieve movie data.",
+    "li5": "Optimize app performance for faster loading times and smoother user experience."
   }
 }

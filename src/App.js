@@ -88,7 +88,7 @@ export function App() {
 
             <TopBar position="bg-transparent absolute " />
           </nav>
-          <main className="max-w-5xl ml-auto mr-auto md:px-4">
+          <main className="max-w-6xl ml-auto mr-auto px-4">
             <Welcome />
             <Project />
             {/* <ContactMe /> */}

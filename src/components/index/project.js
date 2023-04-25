@@ -30,7 +30,7 @@ export default function Project() {
 
   const Card = (props) => {
     return (
-      <div className=" text-white  rounded-xl w-full lg:w-1/2 md:w-5/6 mx-auto lg:mx-0 lg:px-3 p-5 py-5 ">
+      <div className=" text-white  rounded-xl w-full lg:w-1/3 md:w-5/6 mx-auto lg:mx-0 lg:px-3 py-5 ">
         <div
           className=" rounded-xl group shadow-lg  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden"
           onClick={props.handlePopup}
@@ -42,12 +42,12 @@ export default function Project() {
             className=" w-full  group-hover:scale-105 group-hover:blur-md rounded-xl shadow-lg shadow-white transition-all duration-500  "
           />
           <div className=" inset-0 flex justify-center items-center opacity-0  absolute group-hover:opacity-100 w-full h-full transition-all duration-500">
-            <div className=" rounded-full border-2  hover:scale-110 transition-all duration-300 bg-white/20 bg-opacity-100 border-neutral-400 text-neutral-400 p-5 ">
+            <div className=" rounded-full border-2  hover:scale-110 transition-all duration-300 bg-white/10 bg-opacity-100 border-neutral-400 text-neutral-400 p-5 ">
               <Launch />
             </div>
           </div>
         </div>
-        <div className=" py-3 flex flex-col ">
+        <div className=" ml-2 py-3 flex flex-col ">
           <h2 className="text-lg">{props.title}</h2>
           <div className="flex flex-wrap mt-2 gap-2 ">
             {props.techs.map((item, index) => (
@@ -65,7 +65,7 @@ export default function Project() {
   };
 
   return (
-    <section className="" id="portfolio">
+    <section id="portfolio">
       <Title
         title={t("mywork")}
         description={t("myworkd")}

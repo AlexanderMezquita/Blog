@@ -46,7 +46,7 @@ h4 {
 }
 
 #imgProjects{
-  @apply border-4 rounded-xl border-neutral-200/50 dark:border-slate-700
+  @apply border-4 rounded-xl border-neutral-400/20 dark:border-slate-600
 }
 
 
