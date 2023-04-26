@@ -63,7 +63,7 @@ export default function Welcome() {
   // );
 
   return (
-    <section className="pt-32 " id="home">
+    <section className="pt-32" id="home">
       <div className="relative">
         <div className=" flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl ">
           <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
@@ -123,7 +123,7 @@ export default function Welcome() {
                       <img
                         alt=""
                         src={item.src}
-                        className="w-[4.5rem] h-20 svgHover "
+                        className="w-[4.5rem] h-20 svgHover"
                       />
                       <p className="absolute bottom-1 font-bold   text-xs transition-all duration-500">
                         {item.name}

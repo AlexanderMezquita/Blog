@@ -24,10 +24,11 @@
   "moviesearch": {
     "p1": "Il s'agit d'une petite application web qui permet aux utilisateurs de rechercher des informations sur des films, telles que les titres de films et la date de sortie. L'application récupère des données à partir d'une API (The Open Movie DataBase, OMDb) et affiche les résultats sous une forme conviviale pour l'utilisateur.",
     "header1": "Qu'est-ce que j'ai appris?",
-    "li1": "Pagination de données que peut aider à diviser les données en plus petites parties qui peuvent être chargées au besoin.",
+    "li1": "Utilisez le hook useRef pour éviter de faire le même requête vers l'API",
     "li2": "Manipuler et gérer les données récupérées à partir des APIs pour une récupération plus rapide.",
     "li3": "Mettre en place des algorithmes de recherche qui peuvent gérer différentes requêtes et filtres de recherche.",
     "li4": "Travailler avec des APIs tierces pour récupérer les données de films.",
-    "li5": "Optimiser la performance de l'application pour des temps de chargement plus rapides et une expérience utilisateur plus fluide."
+    "li5": "Optimiser la performance de l'application pour des temps de chargement plus rapides et une expérience utilisateur plus fluide.",
+    "li6": "Pagination de données que peut aider à diviser les données en plus petites parties qui peuvent être chargées au besoin."
   }
 }

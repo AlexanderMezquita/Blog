@@ -8,7 +8,7 @@
   "mywork": "My work",
   "myworkd": "These are some of the projects I've built.",
   "myworkb": "Some of my abilities",
-  "cancel": "Cancel",
+  "cancel": "Close",
   "billcrest": {
     "des": "Hello",
     "p1": "Billcrest is a user interface with forms for creating, reading, updating, and deleting data. The state management would be handled by Redux, allowing for easy data manipulation and updates across the application.",
@@ -24,10 +24,11 @@
   "moviesearch": {
     "p1": "This is a small web-based application that allows users to search for information about movies, such as movie titles and release date. The app retrieves data from an API(The Open Movie DataBase, OMDb) and displays the results in a user-friendly format.",
     "header1": "What did I learn?",
-    "li1": "Paginate data that can help breaking the data into smaller chunks that can be loaded as needed.",
+    "li1": "Use the hook useRef to avoid doing the same request to the API",
     "li2": "Manipulate and manage data retrieved from APIs for faster retrieval.",
     "li3": "Implement search algorithms that can handle various search queries and filters.",
     "li4": "Work with third-party APIs to retrieve movie data.",
-    "li5": "Optimize app performance for faster loading times and smoother user experience."
+    "li5": "Optimize app performance for faster loading times and smoother user experience.",
+    "li6": "Paginate data that can help breaking the data into smaller chunks that can be loaded as needed."
   }
 }

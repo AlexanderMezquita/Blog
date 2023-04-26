@@ -65,7 +65,7 @@ export default function Project() {
   };
 
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="py-7">
       <Title
         title={t("mywork")}
         description={t("myworkd")}

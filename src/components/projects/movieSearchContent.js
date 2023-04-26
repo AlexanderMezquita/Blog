@@ -52,6 +52,7 @@ export default function MovieSearchContent() {
           <li>{t("moviesearch.li3")}</li>
           <li>{t("moviesearch.li4")}</li>
           <li>{t("moviesearch.li5")}</li>
+          <li>{t("moviesearch.li6")}</li>
         </ul>
       </article>
     </section>

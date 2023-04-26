@@ -4,6 +4,7 @@ import Welcome from "./components/index/welcome";
 import Footer from "./components/index/footer";
 import Project from "./components/index/project";
 import TopBar from "./components/index/topbar";
+import Timeline from "./components/index/timeline";
 
 export const ModeContext = createContext(undefined);
 export const LanContext = createContext(undefined);
@@ -91,6 +92,7 @@ export function App() {
           <main className="max-w-6xl ml-auto mr-auto px-4">
             <Welcome />
             <Project />
+            <Timeline />
             {/* <ContactMe /> */}
           </main>
           <Footer />
