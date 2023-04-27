@@ -30,5 +30,18 @@
     "li4": "Travailler avec des APIs tierces pour récupérer les données de films.",
     "li5": "Optimiser la performance de l'application pour des temps de chargement plus rapides et une expérience utilisateur plus fluide.",
     "li6": "Pagination de données que peut aider à diviser les données en plus petites parties qui peuvent être chargées au besoin."
+  },
+  "mytimeline": "Parcours d'apprentissage",
+  "timelinedes": "Chronologie illustrant ma progression et ma croissance en apprentissage.",
+  "timelinebackt": "Développement Professionnel",
+  "timeline": {
+    "college": "Acquis les compétences techniques et les connaissances nécessaires pour développer des sites web dynamiques de haute qualité et des applications web.",
+    "coursera": "Le cours a fourni un parcours d'apprentissage complet et structuré pour acquérir les compétences et les connaissances nécessaires pour devenir un développeur web compétent",
+    "billcrest": "Grâce à mon apprentissage et à ma pratique, j'ai approfondi mes connaissances et mon expertise dans la manipulation d'un système de point de vente, l'exécution des opérations CRUD, la réalisation de requêtes HTTP et la gestion efficace des données à l'aide de Redux.",
+    "moviesearch": "Grâce à mon apprentissage et à mes expérimentations, j'ai élargi ma gamme de compétences en paginant les données, et je suis devenu compétent dans l'utilisation de useRef pour améliorer la fonctionnalité de recherche et optimiser les requêtes HTTP.",
+    "mysql": "Actuellement en train d'apprendre comment créer une base de données et établir une connexion à une API REST.",
+    "node": "Actuellement en train d'apprendre comment créer une API REST simple en utilisant Node et Express avec les meilleures pratiques.",
+    "keywords": "Responsable d'analyser et de signaler avec précision les défauts logiciels à l'aide d'outils tels que Jira, et d'avertir l'équipe de développement des problèmes identifiés.",
+    "learning": "Actuellement en train d'apprendre..."
   }
 }

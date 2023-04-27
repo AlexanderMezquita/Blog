@@ -30,5 +30,18 @@
     "li4": "Work with third-party APIs to retrieve movie data.",
     "li5": "Optimize app performance for faster loading times and smoother user experience.",
     "li6": "Paginate data that can help breaking the data into smaller chunks that can be loaded as needed."
+  },
+  "mytimeline": "Learning path",
+  "timelinedes": "Timeline illustrating my progress and growth in learning.",
+  "timelinebackt": "Professional Development",
+  "timeline": {
+    "college": "Acquired the technical skills and knowledge required to develop high quality dynamic websites and web applications.",
+    "coursera": "The course provided a comprehensive and structured learning path to acquire the skills and knowledge necessary to become a proficient web developer.",
+    "billcrest": "Through my learning and practice, I deepened my knowledge and expertise in working with a POS system, performing CRUD operations, making HTTP requests, and effectively managing data using Redux.",
+    "moviesearch": "Through my learning and experimentation, I broadened my range of skills in paginating data, and I became proficient in using useRef to enhance the search functionality and optimize HTTP requests.",
+    "mysql": "Currently learning about how to create a database and make connection to a restful API.",
+    "node": "Currently learning about how to create a simple restful API using Node and Express with the best practices.",
+    "keywords": "Responsible for analyze and report software defects accurately using tools like Jira, and alert the development team about the issues found.",
+    "learning": "Currently learning..."
   }
 }
