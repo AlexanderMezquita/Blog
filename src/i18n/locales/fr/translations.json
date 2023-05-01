@@ -11,7 +11,7 @@
   "cancel": "Annuler",
   "billcrest": {
     "des": "bonjour",
-    "p1": "Billcrest est une interface utilisateur avec des formulaires pour créer, lire, mettre à jour et supprimer des données. La gestion de l'état serait gérée par Redux, permettant une manipulation et des mises à jour de données faciles dans toute l'application.",
+    "p1": "Billcrest est une Point Of Sales system avec des formulaires pour créer, lire, mettre à jour et supprimer des données. La gestion de l'état serait gérée par Redux, permettant une manipulation et des mises à jour de données faciles dans toute l'application.",
     "try": "Essayez-le:",
     "header1": "Qu'est-ce que c'est?",
     "header2": "Que pouvez-vous faire dans cette application?",

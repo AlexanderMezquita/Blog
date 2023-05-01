@@ -52,8 +52,9 @@ export default function Welcome() {
     {
       name: "CV",
       icon: FileDownload,
+
       description: t("cv"),
-      // href: "https://github.com/AlexanderMezquita",
+      href: "./Alexander_Mezquita_CV.pdf",
       delay: 0.9,
     },
   ];
@@ -92,6 +93,7 @@ export default function Welcome() {
               <div className="flex flex-wrap justify-center lg:justify-start gap-5">
                 {socialsIcons.map((item, index) => (
                   <a
+                    download
                     key={index}
                     href={item.href}
                     style={{ animationDelay: `${item.delay}s` }}
@@ -102,6 +104,7 @@ export default function Welcome() {
        dark:border-white border-black buttonAnimation text-black dark:text-white hover:text-white hover:bg-black"
                   >
                     {item.description}
+
                     <item.icon fontSize="small" />
                   </a>
                 ))}
