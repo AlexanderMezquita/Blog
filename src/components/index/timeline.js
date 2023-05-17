@@ -12,6 +12,7 @@ import billcrest from "../assets/icons/billcrest.png";
 import movie from "../assets/icons/movie.svg";
 import soon from "../assets/icons/soon.svg";
 import coursera from "../assets/icons/coursera.png";
+import ablogo from "../assets/a&b-ecommerce/ab-logo.png";
 import { useTranslation } from "react-i18next";
 
 export default function Timeline() {
@@ -66,6 +67,16 @@ export default function Timeline() {
       date: "2023",
       background: "rgb(33, 150, 243)",
       iconBackground: "#626a73",
+    },
+    {
+      img: ablogo,
+      imgClass: " mt-3",
+      h3: "Abercrombie & Fitch Template - Personal Project",
+      h5: "TypeScript - Next.js - Tailwind ",
+      p: t("timeline.ecommerce"),
+      date: "2023 - present",
+      background: "rgb(33, 150, 243)",
+      iconBackground: "	#FFFFFF",
     },
     {
       img: mysql,

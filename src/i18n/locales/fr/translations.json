@@ -42,6 +42,11 @@
     "mysql": "Actuellement en train d'apprendre comment créer une base de données et établir une connexion à une API REST.",
     "node": "Actuellement en train d'apprendre comment créer une API REST simple en utilisant Node et Express avec les meilleures pratiques.",
     "keywords": "Responsable d'analyser et de signaler avec précision les défauts logiciels à l'aide d'outils tels que Jira, et d'avertir l'équipe de développement des problèmes identifiés.",
-    "learning": "Actuellement en train d'apprendre..."
-  }
+    "learning": "Actuellement en train d'apprendre...",
+    "ecommerce": "Site de commerce électronique basé sur la page web Abercrombie créé en utilisant TypeScript et Next. J'en profite également pour apprendre et pratiquer de nouvelles fonctionnalités de Next, telles que App Router."
+  },
+  "ecommerce": {
+    "p1": "C'est une plateforme de commerce électronique qui permet aux clients de naviguer et d'acheter leurs produits en ligne. Les utilisateurs peuvent visiter le site web, parcourir les collections de produits, sélectionner les articles qu'ils souhaitent acheter et les ajouter à leur panier d'achat."
+  },
+  "inDev": "En Développement"
 }

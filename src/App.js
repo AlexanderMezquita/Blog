@@ -77,17 +77,17 @@ export function App() {
   return (
     <LanContext.Provider value={{ language, changeLanguage }}>
       <ModeContext.Provider value={{ mode, toggleTheme }}>
-        <div id="page">
+        <div id="page" className="relative">
           <nav>
             {/* Top Bar shown when screen size is sm */}
             <TopBar
               bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
               position={`${
-                showNav ? "top-0" : "-top-[64px]"
-              } z-20  transition-all duration-300`}
+                showNav ? "top-0 fixed " : "-top-[64px]"
+              } z-10  transition-all duration-300`}
             />
 
-            <TopBar position="bg-transparent absolute " />
+            <TopBar position="bg-transparent absolute  " />
           </nav>
           <main className="max-w-6xl ml-auto mr-auto px-4">
             <Welcome />

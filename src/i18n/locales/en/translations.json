@@ -36,12 +36,17 @@
   "timelinebackt": "Professional Development",
   "timeline": {
     "college": "Acquired the technical skills and knowledge required to develop high quality dynamic websites and web applications.",
-    "coursera": "The course provided a comprehensive and structured learning path to acquire the skills and knowledge necessary to become a proficient web developer.",
+    "coursera": "This course provided me a comprehensive and structured learning path to acquire the skills and knowledge necessary to become a proficient web developer.",
     "billcrest": "Through my learning and practice, I deepened my knowledge and expertise in working with a POS system, performing CRUD operations, making HTTP requests, and effectively managing data using Redux.",
     "moviesearch": "Through my learning and experimentation, I broadened my range of skills in paginating data, and I became proficient in using useRef to enhance the search functionality and optimize HTTP requests.",
     "mysql": "Currently learning about how to create a database and make connection to a restful API.",
     "node": "Currently learning about how to create a simple restful API using Node and Express with the best practices.",
     "keywords": "Responsible for analyze and report software defects accurately using tools like Jira, and alert the development team about the issues found.",
-    "learning": "Currently learning..."
-  }
+    "learning": "Currently learning...",
+    "ecommerce": "E-commerce website based on the Abercrombie web page created using Typescript and Next. Also taking this opportunity to learn and practice new features of Next, like App Router."
+  },
+  "ecommerce": {
+    "p1": "It's an e-commerce platform, allowing customers to browse and purchase their products online. Users can visit the website, browse through collections of products, select the items they wish to purchase, and add them to their shopping cart."
+  },
+  "inDev": "In Development"
 }

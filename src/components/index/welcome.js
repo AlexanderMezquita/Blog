@@ -14,6 +14,7 @@ import materialui from "../assets/icons/materialui.svg";
 import npm from "../assets/icons/npm.svg";
 import firebase from "../assets/icons/firebase.svg";
 import postman from "../assets/icons/postman.svg";
+import typescript from "../assets/icons/typescript.svg";
 
 import { GitHub, LinkedIn, FileDownload } from "@mui/icons-material";
 
@@ -22,18 +23,19 @@ export default function Welcome() {
 
   const skillsIcons = [
     { name: "javascript", src: js, delay: 0 },
+    { name: "typescript", src: typescript, delay: 0.1 },
     { name: "next", src: next, delay: 0.2 },
-    { name: "tailwind", src: tailwind, delay: 0.4 },
-    { name: "react", src: react, delay: 0.6 },
-    { name: "html5", src: html, delay: 0.8 },
-    { name: "css3", src: css, delay: 1 },
-    { name: "redux", src: redux, delay: 1.2 },
-    { name: "git", src: git, delay: 1.4 },
-    { name: "jira", src: jira, delay: 1.6 },
-    { name: "materialui", src: materialui, delay: 1.8 },
-    { name: "npm", src: npm, delay: 2 },
-    { name: "firebase", src: firebase, delay: 2.2 },
-    { name: "postman", src: postman, delay: 2.4 },
+    { name: "tailwind", src: tailwind, delay: 0.3 },
+    { name: "react", src: react, delay: 0.4 },
+    { name: "html5", src: html, delay: 0.5 },
+    { name: "css3", src: css, delay: 0.6 },
+    { name: "redux", src: redux, delay: 0.7 },
+    { name: "git", src: git, delay: 0.8 },
+    { name: "jira", src: jira, delay: 0.9 },
+    { name: "materialui", src: materialui, delay: 1 },
+    { name: "npm", src: npm, delay: 1.1 },
+    { name: "firebase", src: firebase, delay: 1.2 },
+    { name: "postman", src: postman, delay: 1.3 },
   ];
 
   const socialsIcons = [
