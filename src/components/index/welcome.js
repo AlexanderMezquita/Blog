@@ -72,6 +72,7 @@ export default function Welcome() {
           <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
+
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-2 md:col-span-1 animationIn">
               <h2 className=" text-center lg:text-left">{t("greet")}</h2>
@@ -123,14 +124,10 @@ export default function Welcome() {
                     <li
                       style={{ animationDelay: `${item.delay}s` }}
                       key={index}
-                      className="relative"
+                      className="relative hover:[&>p]:visible"
                     >
-                      <img
-                        alt=""
-                        src={item.src}
-                        className="w-[4.5rem] h-20 svgHover"
-                      />
-                      <p className="absolute bottom-1 font-bold   text-xs transition-all duration-500">
+                      <img alt="" src={item.src} className="w-[4.5rem] h-20 " />
+                      <p className=" absolute  z-10 bg-white p-2 rounded-md dark:bg-[#1f252e]">
                         {item.name}
                       </p>
                     </li>
