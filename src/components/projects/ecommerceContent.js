@@ -21,7 +21,7 @@ export default function EcommerceContent() {
           <h3 className=" my-2">{t("billcrest.try")}</h3>
           <div className="flex justify-center space-x-3 mb-2">
             <a
-              href="https://e-commerce-template-ruby.vercel.app/"
+              href="https://e-commerce-template-git-main-alexito.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex justify-center w-full items-center transition-all hover:scale-105 duration-300 cursor-pointer border-2 p-2 
