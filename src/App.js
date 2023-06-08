@@ -81,7 +81,7 @@ export function App() {
           <nav>
             {/* Top Bar shown when screen size is sm */}
             <TopBar
-              bgcolor="dark:bg-[#080808] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
+              bgcolor="dark:bg-[#1f252e] bg-white dark:bg-opacity-50  bg-opacity-50 backdrop-blur-lg "
               position={`${
                 showNav ? "top-0 fixed " : "-top-[64px]"
               } z-10  transition-all duration-300`}

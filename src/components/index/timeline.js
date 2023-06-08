@@ -10,7 +10,7 @@ import keywords from "../assets/icons/keywords.png";
 import mysql from "../assets/icons/mysql.svg";
 import billcrest from "../assets/icons/billcrest.png";
 import movie from "../assets/icons/movie.svg";
-import soon from "../assets/icons/soon.svg";
+// import soon from "../assets/icons/soon.svg";
 import coursera from "../assets/icons/coursera.png";
 import ablogo from "../assets/a&b-ecommerce/ab-logo.png";
 import { useTranslation } from "react-i18next";
@@ -108,8 +108,13 @@ export default function Timeline() {
         backTitle={t("timelinebackt")}
       />
       <br></br>
+
       <VerticalTimeline lineColor="rgb(51 65 85)">
-        {elements.map((item) => {
+        {/* <VerticalTimelineElement
+          iconStyle={{ background: "rgb(51 65 85)", color: "#fff" }}
+          icon={<img alt="" src={soon} className="p-3" />}
+        /> */}
+        {elements.reverse().map((item) => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work test"
@@ -130,10 +135,6 @@ export default function Timeline() {
             </VerticalTimelineElement>
           );
         })}
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(51 65 85)", color: "#fff" }}
-          icon={<img alt="" src={soon} className="p-3" />}
-        />
       </VerticalTimeline>
     </section>
   );

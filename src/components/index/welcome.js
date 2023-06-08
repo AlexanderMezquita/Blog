@@ -43,13 +43,11 @@ export default function Welcome() {
       name: "github",
       icon: GitHub,
       href: "https://github.com/AlexanderMezquita",
-      delay: 0.5,
     },
     {
       name: "linkedin",
       icon: LinkedIn,
       href: "https://www.linkedin.com/in/alexmezsan",
-      delay: 0.7,
     },
     {
       name: "CV",
@@ -57,7 +55,6 @@ export default function Welcome() {
 
       description: t("cv"),
       href: "./Alexander_Mezquita_CV.pdf",
-      delay: 0.9,
     },
   ];
 
@@ -69,7 +66,7 @@ export default function Welcome() {
     <section className="pt-32" id="home">
       <div className="relative">
         <div className=" flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl ">
-          <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[black] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
+          <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[#15191e] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
             <img alt="Alex" className=" h-28 w-28 " src={me} />
           </div>
 
@@ -114,20 +111,18 @@ export default function Welcome() {
               </div>
             </div>
             <div className="col-span-2 md:col-span-1">
-              <h2 className="mb-5 text-center lg:text-left">{t("skills")}</h2>
+              <h2 className=" animationIn mb-5 text-center lg:text-left">
+                {t("skills")}
+              </h2>
               <ul
                 className="flex flex-wrap gap-3 justify-center lg:justify-start"
                 id="skills"
               >
                 {skillsIcons.map((item, index) => {
                   return (
-                    <li
-                      style={{ animationDelay: `${item.delay}s` }}
-                      key={index}
-                      className="relative hover:[&>p]:visible"
-                    >
+                    <li key={index} className="relative hover:[&>p]:visible">
                       <img alt="" src={item.src} className="w-[4.5rem] h-20 " />
-                      <p className=" absolute  z-10 bg-white p-2 rounded-md dark:bg-[#1f252e]">
+                      <p className=" absolute  z-10 bg-white p-2 rounded-md dark:bg-[#15191e]">
                         {item.name}
                       </p>
                     </li>
