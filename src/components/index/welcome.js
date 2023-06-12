@@ -22,20 +22,20 @@ export default function Welcome() {
   const { t } = useTranslation();
 
   const skillsIcons = [
-    { name: "javascript", src: js, delay: 0 },
-    { name: "typescript", src: typescript, delay: 0.1 },
-    { name: "next", src: next, delay: 0.2 },
-    { name: "tailwind", src: tailwind, delay: 0.3 },
-    { name: "react", src: react, delay: 0.4 },
-    { name: "html5", src: html, delay: 0.5 },
-    { name: "css3", src: css, delay: 0.6 },
-    { name: "redux", src: redux, delay: 0.7 },
-    { name: "git", src: git, delay: 0.8 },
-    { name: "jira", src: jira, delay: 0.9 },
-    { name: "materialui", src: materialui, delay: 1 },
-    { name: "npm", src: npm, delay: 1.1 },
-    { name: "firebase", src: firebase, delay: 1.2 },
-    { name: "postman", src: postman, delay: 1.3 },
+    { name: "JavaScript", src: js, delay: 0 },
+    { name: "TypeScript", src: typescript, delay: 0.1 },
+    { name: "Next", src: next, delay: 0.2 },
+    { name: "Tailwind", src: tailwind, delay: 0.3 },
+    { name: "React", src: react, delay: 0.4 },
+    { name: "HTML5", src: html, delay: 0.5 },
+    { name: "CSS3", src: css, delay: 0.6 },
+    { name: "Redux", src: redux, delay: 0.7 },
+    { name: "Git", src: git, delay: 0.8 },
+    { name: "Jira", src: jira, delay: 0.9 },
+    { name: "Material UI", src: materialui, delay: 1 },
+    { name: "NPM", src: npm, delay: 1.1 },
+    { name: "Firebase", src: firebase, delay: 1.2 },
+    { name: "Postman", src: postman, delay: 1.3 },
   ];
 
   const socialsIcons = [
