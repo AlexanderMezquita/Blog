@@ -1,9 +1,12 @@
-import { Launch } from "@mui/icons-material";
+import { Launch, GitHub } from "@mui/icons-material";
 import DevelopmentTag from "./developmentTag";
 
 export default function Card(props) {
+  const widthClass = props.featured
+    ? "w-full"
+    : "w-full lg:w-1/2 md:w-5/6 mx-auto lg:mx-0";
   return (
-    <div className=" text-white  rounded-xl w-full lg:w-1/3 md:w-5/6 mx-auto lg:mx-0 lg:px-3 py-5 ">
+    <div className={`text-white rounded-xl ${widthClass} lg:px-3 py-5`}>
       <div
         className="  rounded-xl group shadow-lg hover:[&>ul]:hidden  dark:shadow-[#191f29] shadow-[#EDEFF2] relative cursor-pointer  overflow-hidden"
         onClick={props.handlePopup}
@@ -36,6 +39,32 @@ export default function Card(props) {
             </li>
           ))}
         </ul>
+        {(props.githubUrl || props.liveUrl) && (
+          <div className="flex gap-2 mt-3">
+            {props.githubUrl && (
+              <a
+                href={props.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-xs border rounded-lg px-2 py-1 dark:text-white text-black border-slate-400 dark:border-slate-500 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200"
+              >
+                <GitHub style={{ fontSize: "0.875rem" }} />
+                GitHub
+              </a>
+            )}
+            {props.liveUrl && (
+              <a
+                href={props.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-xs border rounded-lg px-2 py-1 dark:text-white text-black border-slate-400 dark:border-slate-500 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200"
+              >
+                <Launch style={{ fontSize: "0.875rem" }} />
+                Live
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

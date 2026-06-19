@@ -89,7 +89,7 @@ export function App() {
 
             <TopBar position="bg-transparent absolute  " />
           </nav>
-          <main className="max-w-6xl ml-auto mr-auto px-4">
+          <main key={language} className="max-w-6xl ml-auto mr-auto px-4">
             <Welcome />
             <Project />
             <Timeline />

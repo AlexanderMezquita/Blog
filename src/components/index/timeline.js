@@ -19,6 +19,26 @@ export default function Timeline() {
   const { t } = useTranslation();
   const elements = [
     {
+      img: mysql,
+      imgClass: "border-2 border-[rgb(51 65 85)] rounded-full",
+      h3: "MySQL",
+      h5: "Database creation - Connection to the API",
+      p: t("timeline.mysql"),
+      date: t("timeline.learning"),
+      background: "rgb(33, 150, 243)",
+      iconBackground: "#fff",
+    },
+    {
+      img: nodejs,
+      imgClass: "p-2",
+      h3: "Node.js",
+      h5: "Express - Routing",
+      p: t("timeline.node"),
+      date: t("timeline.learning"),
+      background: "rgb(33, 150, 243)",
+      iconBackground: "#78B743",
+    },
+    {
       img: college,
       imgClass: "rounded-full border-2 border-[rgb(51 65 85)]",
       h3: "Web App Development - MCIT College",
@@ -34,7 +54,7 @@ export default function Timeline() {
       h3: "FQA Tester - Keywords Studios",
       h5: "Jira - Team work - Testing",
       p: t("timeline.keywords"),
-      date: "2020 - 2022",
+      date: "2020 - Present",
       background: "rgb(33, 150, 243)",
       iconBackground: "#fff",
     },
@@ -78,26 +98,6 @@ export default function Timeline() {
       background: "rgb(33, 150, 243)",
       iconBackground: "	#FFFFFF",
     },
-    {
-      img: mysql,
-      imgClass: "border-2 border-[rgb(51 65 85)] rounded-full",
-      h3: "MySQL",
-      h5: "Database creation - Connection to the API",
-      p: t("timeline.mysql"),
-      date: t("timeline.learning"),
-      background: "rgb(33, 150, 243)",
-      iconBackground: "#fff",
-    },
-    {
-      img: nodejs,
-      imgClass: "p-2",
-      h3: "Node.js",
-      h5: "Express - Routing",
-      p: t("timeline.node"),
-      date: t("timeline.learning"),
-      background: "rgb(33, 150, 243)",
-      iconBackground: "#78B743",
-    },
   ];
 
   return (
@@ -114,7 +114,7 @@ export default function Timeline() {
           iconStyle={{ background: "rgb(51 65 85)", color: "#fff" }}
           icon={<img alt="" src={soon} className="p-3" />}
         /> */}
-        {elements.reverse().map((item) => {
+        {elements.map((item) => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work test"

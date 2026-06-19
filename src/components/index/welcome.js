@@ -52,7 +52,6 @@ export default function Welcome() {
     {
       name: "CV",
       icon: FileDownload,
-
       description: t("cv"),
       href: "./Alexander_Mezquita_CV.pdf",
     },
@@ -66,8 +65,8 @@ export default function Welcome() {
     <section className="pt-32" id="home">
       <div className="relative">
         <div className=" flex flex-col items-center z-10 secondary-bg-color  p-7 md:p-10  rounded-xl ">
-          <div className="absolute meIconTransition -top-20 h-28 w-28   border-4 dark:border-[#15191e] border-[#F9FAFB]  secondary-bg-color flex justify-center items-center rounded-full">
-            <img alt="Alex" className=" h-28 w-28 " src={me} />
+          <div className="absolute meIconTransition -top-24 h-36 w-36 border-4 dark:border-[#15191e] border-[#F9FAFB] secondary-bg-color flex justify-center items-center rounded-full">
+            <img alt="Alex" className="h-36 w-36 object-cover rounded-full" src={me} />
           </div>
 
           <div className="grid grid-cols-2 gap-4">
@@ -120,7 +119,7 @@ export default function Welcome() {
               >
                 {skillsIcons.map((item, index) => {
                   return (
-                    <li key={index} className="relative hover:[&>p]:visible">
+                    <li key={index} className="relative hover:[&>p]:visible" style={{ animationDelay: `${item.delay}s` }}>
                       <img alt="" src={item.src} className="w-[4.5rem] h-20 " />
                       <p className=" absolute  z-10 bg-white p-2 rounded-md dark:bg-[#15191e]">
                         {item.name}

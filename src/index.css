@@ -64,19 +64,22 @@ h5{
   @apply animationIn
 }
 .animationIn {
-  animation: transitionIn 2s;
+  animation: transitionIn 0.5s backwards;
 }
 
 @keyframes transitionIn {
   0% {
-      transform: translateY(90px); }
+    opacity: 0;
+    transform: translateY(90px);
+  }
   50% {
+    opacity: 1;
     transform: translateY(-5px);
   }
-  100%{
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
-  
 }
 .pulseAnimation {
   animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -142,6 +145,21 @@ h5{
 #skills  li:hover p {
   opacity: 1;
   z-index: 1;
+}
+
+main {
+  animation: contentFadeIn 0.35s ease-out;
+}
+
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .svgHover{

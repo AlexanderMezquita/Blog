@@ -4,21 +4,34 @@
   <head>
 
     <meta charset="utf-8" />
-    <title>Alex's Portfolio | Front-End Web Developer</title>
-    
-    <link rel="icon"  href="./meIcon.png" type="image/png" />
+    <title>Alex's Portfolio | Full-Stack Web Developer</title>
+
+    <link rel="icon" href="./meIcon.png" type="image/png" sizes="any" />
+    <link rel="apple-touch-icon" href="./meIcon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-          name="description"
-          content="Welcome to my portfolio! Here, you will find a collection of my creative works and projects that showcase my skills web development."
-        />
+    <meta name="description" content="Full-Stack Web Developer based in Canada. Builds TypeScript/React frontends and .NET backends with experience in multi-tenant SaaS, QA, and team delivery." />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alex's Portfolio | Full-Stack Web Developer" />
+    <meta property="og:description" content="Full-Stack Web Developer based in Canada. Builds TypeScript/React frontends and .NET backends with experience in multi-tenant SaaS, QA, and team delivery." />
+    <meta property="og:image" content="./meIcon.png" />
+    <meta property="og:url" content="https://www.alefolio.com/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Alex's Portfolio | Full-Stack Web Developer" />
+    <meta name="twitter:description" content="Full-Stack Web Developer based in Canada. Builds TypeScript/React frontends and .NET backends with experience in multi-tenant SaaS, QA, and team delivery." />
+    <meta name="twitter:image" content="./meIcon.png" />
   
     
   </head>
     
   <body>
+    <style>
+      body { background-color: #F9FAFB; }
+      body.dark { background-color: #15191e; }
+    </style>
     <script>
-  const selectedTheme = localStorage.getItem('prefersDarkMode') // returns a STRING 
+  const selectedTheme = localStorage.getItem('prefersDarkMode') // returns a STRING
   document.body.classList[selectedTheme === "true" ? "add": "remove"]("dark")
     </script>
     <div id="root"></div>

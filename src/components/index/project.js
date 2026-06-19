@@ -47,10 +47,13 @@ export default function Project() {
         <MovieSearch open={movieSearchOpen} close={handleMovieSearchPopUp} />
         <Ecommerce open={ecommerceOpen} close={handleEcommercePopUp} />
         <Card
+          featured={true}
           title="Billcrest - Point of Sales"
           techs={["Tailwind", "Material UI", "Next.js"]}
           image={billcrestImage}
           handlePopup={handleBillcrestPopUp}
+          liveUrl="https://www.billcrest.com"
+          githubUrl="https://github.com/AlamMena/Billcrest"
         />
         <Card
           title="Abercrombie & Fitch E-commerce"
@@ -58,12 +61,16 @@ export default function Project() {
           development={true}
           image={ecommerce}
           handlePopup={handleEcommercePopUp}
+          liveUrl="https://e-commerce-template-git-main-alexito.vercel.app/"
+          githubUrl="https://github.com/AlexanderMezquita/e-commerce-template"
         />
         <Card
           title="Movie Search"
           techs={["Vite + React", "CSS"]}
           image={movieSearchImage}
           handlePopup={handleMovieSearchPopUp}
+          liveUrl="https://search-app-sigma.vercel.app/"
+          githubUrl="https://github.com/AlexanderMezquita/search-app"
         />
       </div>
     </section>
