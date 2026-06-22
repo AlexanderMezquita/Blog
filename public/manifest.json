@@ -1,0 +1,20 @@
+{
+  "short_name": "Alex Mezquita",
+  "name": "Alex Mezquita — Full-Stack Developer Portfolio",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "meIcon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#15191e",
+  "background_color": "#F9FAFB"
+}

@@ -1,7 +1,7 @@
 {
   "greet": "Salut, je suis Alex",
-  "title": "Développeur Web Full-Stack",
-  "description": " basé au Canada. Développe des interfaces TypeScript/React et des backends .NET avec de l'expérience en SaaS multi-tenant, QA et livraison en équipe.",
+  "title": "Développeur Full-Stack | .NET · React · Next.js · TypeScript",
+  "description": " basé à Montréal, Canada. Conçoit des applications SaaS multi-tenant et des API REST de bout en bout avec .NET/C# et React/Next.js, fort de plus de 5 ans d'expérience professionnelle en assurance qualité et de flux de développement assistés par IA avec Claude Code CLI et Atlassian MCP.",
   "contact": "Information de Contact",
   "skills": "Mon compétences",
   "cv": "Télécharge mon CV",
@@ -11,15 +11,15 @@
   "cancel": "Annuler",
   "billcrest": {
     "des": "bonjour",
-    "p1": "Billcrest est une Point Of Sales system avec des formulaires pour créer, lire, mettre à jour et supprimer des données. La gestion de l'état serait gérée par Redux, permettant une manipulation et des mises à jour de données faciles dans toute l'application.",
+    "p1": "Billcrest est un tableau de bord financier SaaS multi-tenant construit en 9 mois — 53 routes réparties sur 11 modules avec un routage propre à chaque tenant, 132 composants TypeScript réutilisables, et un design system évolutif avec un thème clair/sombre sans effet de flash. Il consomme une API .NET hébergée sur Fly.dev via un client TypeScript généré depuis OpenAPI et entièrement typé, avec des permissions basées sur les rôles et des flux d'authentification complets (connexion, inscription, réinitialisation du mot de passe, vérification de l'e-mail). Testé avec environ 1500 cas de test via Vitest, Testing Library et axe-core pour l'accessibilité.",
     "try": "Essayez-le:",
     "header1": "Qu'est-ce que c'est?",
     "header2": "Que pouvez-vous faire dans cette application?",
-    "modify": "Modifier les informations personnelles de l'utilisateur, telles que le nom, l'adresse e-mail et le numéro de téléphone, permettant aux utilisateurs de gérer les paramètres de leur compte.",
-    "manage": "Gérer l'inventaire: Suivre les niveaux de stock en temps réel et mettre à jour les quantités en stock.",
-    "crud": "CRUD: Vous pouvez utiliser l'application pour créer, lire, mettre à jour et supprimer de nouveaux enregistrements dans la base de données.",
-    "charts": "Fournir une représentation visuelle de données facile à comprendre et à interpréter à l'aide de graphiques. Cela peut aider les utilisateurs à identifier rapidement les tendances et les schémas, et à prendre des décisions éclairées en se basant sur les données.",
-    "invoice": "Traiter les transactions de vente: Vous pouvez utiliser l'application pour traiter les transactions de vente, y compris accepter les paiements par carte de crédit, carte de débit ou en espèces. L'application peut également calculer le coût total de l'achat, y compris les taxes et les éventuelles réductions."
+    "modify": "Paramètres de compte et de tenant basés sur les rôles, avec des flux d'authentification complets incluant la réinitialisation du mot de passe et la vérification de l'e-mail.",
+    "manage": "Gérer les données à travers les modules de la plateforme grâce à des vues paginées et propres à chaque tenant.",
+    "crud": "CRUD: créer, lire, mettre à jour et supprimer des enregistrements à travers les domaines du tableau de bord via un client API entièrement typé.",
+    "charts": "Tableaux de bord visuels et rapports qui font ressortir les tendances à travers les données de chaque tenant.",
+    "invoice": "Flux financiers couvrant les opérations quotidiennes que le tableau de bord a été conçu pour gérer."
   },
   "moviesearch": {
     "p1": "Il s'agit d'une petite application web qui permet aux utilisateurs de rechercher des informations sur des films, telles que les titres de films et la date de sortie. L'application récupère des données à partir d'une API (The Open Movie DataBase, OMDb) et affiche les résultats sous une forme conviviale pour l'utilisateur.",
@@ -37,11 +37,12 @@
   "timeline": {
     "college": "Acquis les compétences techniques et les connaissances nécessaires pour développer des sites web dynamiques de haute qualité et des applications web.",
     "coursera": "Le cours a fourni un parcours d'apprentissage complet et structuré pour acquérir les compétences et les connaissances nécessaires pour devenir un développeur web compétent",
-    "billcrest": "Grâce à mon apprentissage et à ma pratique, j'ai approfondi mes connaissances et mon expertise dans la manipulation d'un système de point de vente, l'exécution des opérations CRUD, la réalisation de requêtes HTTP et la gestion efficace des données à l'aide de Redux.",
+    "billcrest": "Construction d'un tableau de bord financier SaaS multi-tenant de bout en bout — un client TypeScript entièrement typé connecté à une API .NET, un design system de plus de 130 composants, et des flux complets d'authentification et de gestion des rôles — tout en gérant le cycle de livraison via Claude Code CLI, Jira et des tests automatisés avec Vitest et Testing Library.",
+    "rizos": "Construction d'une API REST multi-tenant de gestion de rendez-vous et d'entreprise en ASP.NET Core, avec un contrôleur CRUD générique de base, une modélisation de domaine avec EF Core, une authentification Firebase JWT, et un contexte de tenant résolu à chaque requête. Déployée sur Azure App Service.",
     "moviesearch": "Grâce à mon apprentissage et à mes expérimentations, j'ai élargi ma gamme de compétences en paginant les données, et je suis devenu compétent dans l'utilisation de useRef pour améliorer la fonctionnalité de recherche et optimiser les requêtes HTTP.",
     "mysql": "Actuellement en train d'apprendre comment créer une base de données et établir une connexion à une API REST.",
     "node": "Actuellement en train d'apprendre comment créer une API REST simple en utilisant Node et Express avec les meilleures pratiques.",
-    "keywords": "Responsable d'analyser et de signaler avec précision les défauts logiciels à l'aide d'outils tels que Jira, et d'avertir l'équipe de développement des problèmes identifiés.",
+    "keywords": "Exécution de tests fonctionnels, de régression et exploratoires sur plusieurs titres logiciels, gestion du cycle de vie complet des défauts avec Jira et TestRail, et collaboration avec les développeurs et les producteurs pour trier les défauts et améliorer la stabilité des versions.",
     "learning": "Actuellement en train d'apprendre...",
     "ecommerce": "Site de commerce électronique basé sur la page web Abercrombie créé en utilisant TypeScript et Next. J'en profite également pour apprendre et pratiquer de nouvelles fonctionnalités de Next, telles que App Router."
   },

@@ -1,5 +1,6 @@
 import { Launch, GitHub } from "@mui/icons-material";
 import DevelopmentTag from "./developmentTag";
+import bitbucket from "../assets/icons/bitbucket.svg";
 
 export default function Card(props) {
   const widthClass = props.featured
@@ -39,7 +40,7 @@ export default function Card(props) {
             </li>
           ))}
         </ul>
-        {(props.githubUrl || props.liveUrl) && (
+        {(props.githubUrl || props.bitbucketUrl || props.liveUrl) && (
           <div className="flex gap-2 mt-3">
             {props.githubUrl && (
               <a
@@ -50,6 +51,17 @@ export default function Card(props) {
               >
                 <GitHub style={{ fontSize: "0.875rem" }} />
                 GitHub
+              </a>
+            )}
+            {props.bitbucketUrl && (
+              <a
+                href={props.bitbucketUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-xs border rounded-lg px-2 py-1 dark:text-white text-black border-slate-400 dark:border-slate-500 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-200"
+              >
+                <img src={bitbucket} alt="" style={{ width: "0.875rem", height: "0.875rem" }} />
+                Bitbucket
               </a>
             )}
             {props.liveUrl && (

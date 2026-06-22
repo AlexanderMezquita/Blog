@@ -1,7 +1,7 @@
 {
   "greet": "Hi, I'm Alex",
-  "title": "Full-Stack Web Developer",
-  "description": " based in Canada. Builds TypeScript/React frontends and .NET backends with experience in multi-tenant SaaS, QA, and team delivery.",
+  "title": "Full-Stack Developer | .NET · React · Next.js · TypeScript",
+  "description": " based in Montréal, Canada. Builds multi-tenant SaaS applications and REST APIs end-to-end with .NET/C# and React/Next.js, backed by 5+ years of professional QA experience and AI-assisted development workflows with Claude Code CLI and Atlassian MCP.",
   "contact": "Contact",
   "skills": "My skills",
   "cv": "Get my CV",
@@ -11,15 +11,15 @@
   "cancel": "Close",
   "billcrest": {
     "des": "Hello",
-    "p1": "Billcrest is a Point Of Sales system with forms for creating, reading, updating, and deleting data. The state management would be handled by Redux, allowing for easy data manipulation and updates across the application.",
+    "p1": "Billcrest is a multi-tenant SaaS finance dashboard built over 9 months — 53 routes across 11 modules with tenant-scoped routing, 132 reusable TypeScript components, and a scalable design system with zero-flash dark/light theming. It consumes a .NET backend on Fly.dev through an OpenAPI-generated, fully type-safe TypeScript client, with role-based permissions and complete auth flows (login, register, password reset, email verification). Tested with ~1,500 test cases across Vitest, Testing Library, and axe-core for accessibility.",
     "try": "Try it out:",
     "header1": "What is it?",
     "header2": "What can you do in this app?",
-    "modify": "Modify user personal information, such as name, email address, and phone number allowing users to manage their account settings.",
-    "manage": "Track inventory levels in real-time and update inventory counts.",
-    "crud": "CRUD: You can use the app to create, read, update and delete new records in the database.",
-    "charts": "Provide a visual representation of data that is easy to understand and interpret using charts. This can help users to quickly identify trends and patterns, and make informed decisions based on the data.",
-    "invoice": "Process sales transactions: You can use the app to process sales transactions, including accepting payment by credit card, debit card, or cash. The app can also calculate the total cost of the purchase, including taxes and any discounts."
+    "modify": "Role-based account and tenant settings, backed by full auth flows including password reset and email verification.",
+    "manage": "Manage data across the platform's modules with paginated, tenant-scoped views.",
+    "crud": "CRUD: create, read, update, and delete records across the dashboard's domains through a type-safe API client.",
+    "charts": "Visual dashboards and reporting that surface trends across tenant data at a glance.",
+    "invoice": "Financial workflows covering the day-to-day operations the dashboard was built to manage."
   },
   "moviesearch": {
     "p1": "This is a small web-based application that allows users to search for information about movies, such as movie titles and release date. The app retrieves data from an API(The Open Movie DataBase, OMDb) and displays the results in a user-friendly format.",
@@ -37,11 +37,12 @@
   "timeline": {
     "college": "Acquired the technical skills and knowledge required to develop high quality dynamic websites and web applications.",
     "coursera": "This course provided me a comprehensive and structured learning path to acquire the skills and knowledge necessary to become a proficient web developer.",
-    "billcrest": "Through my learning and practice, I deepened my knowledge and expertise in working with a POS system, performing CRUD operations, making HTTP requests, and effectively managing data using Redux.",
+    "billcrest": "Building a multi-tenant SaaS finance dashboard end-to-end — a type-safe TypeScript client against a .NET API, a 130+ component design system, and full auth/RBAC flows — while managing the delivery lifecycle through Claude Code CLI, Jira, and automated testing with Vitest and Testing Library.",
+    "rizos": "Built a multi-tenant appointment and business management REST API in ASP.NET Core, with a generic CRUD base controller, EF Core domain modeling, Firebase JWT authentication, and tenant context resolved per request. Deployed to Azure App Service.",
     "moviesearch": "Through my learning and experimentation, I broadened my range of skills in paginating data, and I became proficient in using useRef to enhance the search functionality and optimize HTTP requests.",
     "mysql": "Currently learning about how to create a database and make connection to a restful API.",
     "node": "Currently learning about how to create a simple restful API using Node and Express with the best practices.",
-    "keywords": "Responsible for analyze and report software defects accurately using tools like Jira, and alert the development team about the issues found.",
+    "keywords": "Executing functional, regression, and exploratory testing across multiple software titles, managing the full defect lifecycle with Jira and TestRail, and partnering with developers and producers to triage defects and improve release stability.",
     "learning": "Currently learning...",
     "ecommerce": "E-commerce website based on the Abercrombie web page created using Typescript and Next. Also taking this opportunity to learn and practice new features of Next, like App Router."
   },

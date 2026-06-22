@@ -5,8 +5,7 @@ import accountSettings from "../assets/billcrest/accountSettings.png";
 import products from "../assets/billcrest/products.png";
 import invoice from "../assets/billcrest/invoice.png";
 import charts from "../assets/billcrest/charts.png";
-
-import { GitHub } from "@mui/icons-material";
+import bitbucket from "../assets/icons/bitbucket.svg";
 
 export default function BillCrestContent() {
   const { t } = useTranslation();
@@ -26,24 +25,24 @@ export default function BillCrestContent() {
           <h3 className=" my-2">{t("billcrest.try")}</h3>
           <div className="flex justify-center space-x-3 mb-2">
             <a
-              href="https://www.billcrest.com"
+              href="https://www.bill-crest.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center w-full items-center transition-all hover:scale-105 duration-300 cursor-pointer border-2 p-2 
-       rounded-xl  dark:hover:text-black dark:hover:bg-white 
+              className="flex justify-center w-full items-center transition-all hover:scale-105 duration-300 cursor-pointer border-2 p-2
+       rounded-xl  dark:hover:text-black dark:hover:bg-white
        dark:border-white border-black text-black dark:text-white hover:text-white hover:bg-black"
             >
               Live App
             </a>
             <a
-              href="https://github.com/AlamMena/Billcrest"
+              href="https://bitbucket.org/billcrest/billcrest-frontend/src/main/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center  w-full items-center transition-all hover:scale-105 duration-300 cursor-pointer border-2 p-2 
-       rounded-xl  dark:hover:text-black dark:hover:bg-white 
+              className="flex justify-center  w-full items-center transition-all hover:scale-105 duration-300 cursor-pointer border-2 p-2
+       rounded-xl  dark:hover:text-black dark:hover:bg-white
        dark:border-white border-black text-black dark:text-white hover:text-white hover:bg-black"
             >
-              <GitHub alt="" className="w-10 h-10" />
+              <img src={bitbucket} alt="" className="w-6 h-6" />
             </a>
           </div>
         </div>

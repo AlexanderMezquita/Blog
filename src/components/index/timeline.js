@@ -13,6 +13,7 @@ import movie from "../assets/icons/movie.svg";
 // import soon from "../assets/icons/soon.svg";
 import coursera from "../assets/icons/coursera.png";
 import ablogo from "../assets/a&b-ecommerce/ab-logo.png";
+import postman from "../assets/icons/postman.svg";
 import { useTranslation } from "react-i18next";
 
 export default function Timeline() {
@@ -52,19 +53,9 @@ export default function Timeline() {
       img: keywords,
       imgClass: "rounded-full ",
       h3: "FQA Tester - Keywords Studios",
-      h5: "Jira - Team work - Testing",
+      h5: "Jira - TestRail - Defect Lifecycle - Testing",
       p: t("timeline.keywords"),
       date: "2020 - Present",
-      background: "rgb(33, 150, 243)",
-      iconBackground: "#fff",
-    },
-    {
-      img: billcrest,
-      imgClass: " p-2  ",
-      h3: "Billcrest - Personal Project",
-      h5: "React - Material UI - Tailwind",
-      p: t("timeline.billcrest"),
-      date: "2022 - present",
       background: "rgb(33, 150, 243)",
       iconBackground: "#fff",
     },
@@ -89,6 +80,16 @@ export default function Timeline() {
       iconBackground: "#626a73",
     },
     {
+      img: postman,
+      imgClass: " p-2  ",
+      h3: "Rizos Afros y Más - Salon & Appointment API",
+      h5: "C# - ASP.NET Core - EF Core - PostgreSQL - Firebase Auth - Azure",
+      p: t("timeline.rizos"),
+      date: "2023 - present",
+      background: "rgb(33, 150, 243)",
+      iconBackground: "#fff",
+    },
+    {
       img: ablogo,
       imgClass: " mt-3",
       h3: "Abercrombie & Fitch Template - Personal Project",
@@ -97,6 +98,16 @@ export default function Timeline() {
       date: "2023 - present",
       background: "rgb(33, 150, 243)",
       iconBackground: "	#FFFFFF",
+    },
+    {
+      img: billcrest,
+      imgClass: " p-2  ",
+      h3: "Billcrest - Multi-Tenant SaaS Finance Dashboard",
+      h5: "Next.js - TypeScript - .NET - Tailwind",
+      p: t("timeline.billcrest"),
+      date: "2025 - present",
+      background: "rgb(33, 150, 243)",
+      iconBackground: "#fff",
     },
   ];
 

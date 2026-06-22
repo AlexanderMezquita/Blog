@@ -47,13 +47,12 @@ export default function Project() {
         <MovieSearch open={movieSearchOpen} close={handleMovieSearchPopUp} />
         <Ecommerce open={ecommerceOpen} close={handleEcommercePopUp} />
         <Card
-          featured={true}
-          title="Billcrest - Point of Sales"
-          techs={["Tailwind", "Material UI", "Next.js"]}
+          title="Billcrest - Multi-Tenant SaaS Finance Dashboard"
+          techs={["Next.js", "TypeScript", ".NET", "Tailwind"]}
           image={billcrestImage}
           handlePopup={handleBillcrestPopUp}
-          liveUrl="https://www.billcrest.com"
-          githubUrl="https://github.com/AlamMena/Billcrest"
+          liveUrl="https://www.bill-crest.com"
+          bitbucketUrl="https://bitbucket.org/billcrest/billcrest-frontend/src/main/"
         />
         <Card
           title="Abercrombie & Fitch E-commerce"
